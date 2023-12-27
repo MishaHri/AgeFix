@@ -8,35 +8,50 @@
   <script src="https://kit.fontawesome.com/1f6873ff8c.js" crossorigin="anonymous"></script>
 </head>
 
+<body>
+
       <nav>
         <img src = "images/logo.png" class ='logo'>
-        <br>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Services</a></li>
-        <li><a href="/">F&Q</a></li>
-          <li><a href="/">Contact</a></li>
+        <ul id = "sidemenu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#treatments">Services</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#F&Q">f&q</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
+        <i class="fa-solid fa-bars" onclick ="openmenu()"></i>
       </nav>
 
+      <!-- <div class = "content"></div> -->
   <div id ="header">
-    <dic class = "container">
-      <div class = "header-text">
-        <h1>Age is just a number</h1>
-        <h2>You can age-fix it<h2>
+      <div class = "row">
+        <div class = "presentation-left">
+        </div>
+              <div class = "presentation-right">
+                    <h2>Welcome to AgeFix</h2>
+                    <br>
+                    <p>We offer personalised treatments dedicated to improve your skin health and make you feel and look your very best.</p>
+                    <br>
+                    <p> And don t forget... Age is just a number.</p>
+                    <br>
+                    <p>Book now a free consultation</p>
+                    <a href = "/" class = "btn">Book now</a>
+              </div>
       </div>
   </div>
+  </div>
 
+<!-- --------about ---------------- -->
   <div id = "about">
+    <h3 class="sub-title">AgeFix Story</h3>
         <div class= "container">
               <div class = "row">
                       <div class=" about-col-1">
                         <img src = "images/profile.png">
                       </div>
                       <div class="about-col-2">
-                          <h3 class="sub-title">About</h3>
-                          <br>
+                          <!-- <h3 class="sub-title">Age Fix Story</h3> -->
                           <p>
                               Your skin is the largest organ in the body, yet it is often the one we pay the least attention to.
                               <br>
@@ -44,46 +59,58 @@
                               to be the ultimate destination for improving skin health and making you feel and look your very best.
                           </p>
                             <div class = "tab-titles">
-                                <p class= "tab-links active-link" onclick = "opentab('About')"> About Us</p>
-                                <p class = "tab-links" onclick = "opentab('Clinic')">The clinic</p>
-                                <p class = "tab-links" onclick = "opentab('Mission')">Our Mission</p>
+                                <p class= "tab-links active-link" onclick = "opentab('About')"> Vision</p>
+                                <p class = "tab-links" onclick = "opentab('mission')">Our Mission</p>
+                                <p class = "tab-links" onclick = "opentab('clinic')">Values</p>
                             </div>
                             <div class = "tab-contents active-tab"  id = "About">
-                              <ul>
-                              <li><span>More text here read more...</span></li>
-                              <li><span>More text here read more...</span></li>
-                              <li><span>read more...</span></li>
-                              </ul>
+                           <span><p>At Age Fix, we envision a world where individuals confidently embrace their inherent, ageless beauty.
+                                Our vision is to be a guiding light in the transformative journey of unlocking and maintaining timeless beauty,
+                                 fostering a culture where each person radiates confidence and authenticity.
+                                </p></span>
                             </div>
-                            <div class = "tab-contents" id = "Clinic">
-                              <ul>
-                              <li><span>Your text here...</span></li>
-                              <li><span>More text here</span></li>
-                              <li><span>read more...</span></li>
-                              </ul>
+                            <div class = "tab-contents" id = "clinic">
+                              <span><p> Our mission at Age Fix is to provide specialized Botox and face booster treatments with expertise and compassion.
+                                Rooted in a background of nursing since 2009 and driven by a profound vision, we are dedicated to enhancing natural beauty
+                                and confidence. We strive to bring out the best version of each client, not by turning back time,
+                                but by skillfully enhancing and maintaining their unique, natural essence. We are committed to creating a safe and welcoming
+                                space where clients can embark on a transformative journey to discover and celebrate their timeless beauty.</p></span>
                             </div>
-                            <div class = "tab-contents" id = "Mission">
-                              <ul>
-                              <li><span>We save the planet</span></li>
-                              <li><span>More text here</span></li>
-                              <li><span>read more...</span></li>
-                              </ul>
+                            <div class = "tab-contents" id = "mission">
+                                <span><p>Client-Centered Excellence:
+                                Prioritize exceptional service, ensuring clients feel valued and respected.</p>
+                              <p>Integrity and Ethics:
+                                Our eco-friendly design is at the core of our strategy, reflecting our commitment to integrity and ethical practices.</p>
+                                Continuous Learning:
+                                Embrace a culture of ongoing education and professional development to stay abreast of the latest industry trends and advancements.
+                                Safety and Well-being:
+                                Prioritize the safety and well-being of clients, ensuring all treatments are conducted with the utmost care.
+                                Innovation:
+                                Foster a culture of innovation, exploring new treatments and technologies to provide cutting-edge services.
+                                Transparency:
+                                Maintain transparency in all interactions, from pricing to treatment procedures, to build trust with clients.
+                                Empowerment:
+                                Empower clients to make informed decisions about their aesthetic journeys, providing guidance and support.
+                                Environmental Responsibility:
+                                Implement eco-friendly practices and products whenever possible to reduce environmental impact.
+                                Passion for Beauty and Wellness:
+                                Cultivate a passion for enhancing natural beauty and promoting overall wellness.</p></span>
                             </div>
                       </div>
               </div>
          </div>
   </div>
 
-  <div id = "services">
-    <div class ="container">
-      <center>
-      <h1 class="sub-title">Our Services</h1>
-      </center>
-          <div class = "services-list">
+  <!-- ...........treatments................ -->
+
+<div id = "treatments">
+        <div class ="container">
+      <h1 class="sub-title">Treatments</h1>
+          <div class = "work-list">
               <div class = "work">
                   <img src = "images/services.png">
                     <div class = "layer">
-                          <h2>Service 1</h2>
+                          <h3>Service 1</h3>
                           <p>yghgukehrgkjetjbge</p>
                           <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
@@ -91,7 +118,7 @@
               <div class = "work">
                 <img src = "images/services.png">
                   <div class = "layer">
-                        <h2>Service 1</h2>
+                        <h3>Service 2</h3>
                         <p>yghgukehrgkjetjbge</p>
                         <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                   </div>
@@ -99,25 +126,100 @@
             <div class = "work">
               <img src = "images/services.png">
                 <div class = "layer">
-                      <h2>Service 1</h2>
+                      <h3>Service 3</h3>
                       <p>yghgukehrgkjetjbge</p>
                       <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
+            </div>
           </div>
-
-          </div>
-          <br>
-
+        </div>
+        <div class = "container">
           <center>
-          <p>Need help to find the perfect treatment for you?
-            <br>
-            Book a free consulatition now.
-          </p>
-          </center>
-        <a href = "/" class = "btn">Book now</a>
-    </div>
-  </div>
+        <h3>Can t decide what treatment is the best for you?<br>Book now a free consutatation</h3>
+        </center>
+        <a href = "" class = "btn">See more</a>
+        </div>
+</div>
 
+        <!-- ----------------Blog-------------- -->
+
+      <div id = "blog">
+          <div class ="container">
+            <h1 class="sub-title">Skin Education & Life Style</h1>
+            <br>
+            <p>If you are looking to adopt a more helthy life style?<br>We are happy to share our journey with you.<br> Read our blog posts for more.</p>
+                <div class = "services-list">
+                          <div>
+                            <img src = "images/water.png">
+                                <h2>Water miracles</h2>
+                                <p>Youn knew that just by drinking every day around 2 Liters of water you can make miracles..... </p>
+                                <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                          </div>
+                        <div>
+                          <img src = "images/green.png">
+                              <h2>Eat green</h2>
+                              <p>I studied on myself that long and strict diets are not always a he best way.....</p>
+                              <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                       <div>
+                            <img src = "images/sustainable.png">
+                            <h2>Sustainable life style</h2>
+                            <p>"Every little helps", i believe it should be adopted in every aspect of our life....</p>
+                            <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                      </div>
+                </div>
+          </div>
+      </div>
+<!-- ...........contact form ......... -->
+
+      <div id  = "contact">
+              <h1 class = "sub-title">Contact Us </h1>
+                <div class = "row">
+                    <!-- <div class = "contact-left">
+                        <p><i class="fa-regular fa-paper-plane"></i>Contact@example.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>07502578447</p>
+                          <div class = "social-icons">
+                            <a href ="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>
+                            <a href =""><i class="fa-brands fa-facebook"></i>
+                          </div> -->
+                    </div>
+                    <div class = "contact-right">
+                      <form>
+                        <input type ="text" name="Name" placeholder="Your Name" required>
+                        <input type ="email" name = "email" placeholder="Your Email" required>
+                        <textarea name = "Message" rows ="6" placeholder="Your Message"></textarea>
+                        <button type ="submit" class ="btn btn2">Submit</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+
+         <div id = "footer">
+          <p>By appointment only</p>
+          <p>Adress: London Uk</p>
+          <div class = "contact-left">
+            <p><i class="fa-regular fa-paper-plane"></i>Contact@example.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>07502578447</p>
+              <div class = "social-icons">
+                <a href ="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>
+                <a href =""><i class="fa-brands fa-facebook"></i>
+              </div>
+         </div>
+
+
+  <script>
+    window.onscroll =function(){myFunction()};
+    var navbar = document.getElementsByClassName("nav");
+    var sticky =navbar.offsetTop;
+    function myFunction(){
+      if (window.pageYOffset >= sticky){
+        navbar.classList.add("sticky")
+      }else{
+        navbar.classList.remove("sticky")
+      }
+    }
+
+    </script>
 
   <script>
     var tablinks=document.getElementsByClassName("tab-links");
@@ -134,6 +236,17 @@
       }
   </script>
 
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu (){
+    sidemenu.style.right ="0";
+  }
+  function closemenu (){
+    sidemenu.style.right ="-200px";
+  }
+
+  </script>
 
 </body>
+
 </html>
