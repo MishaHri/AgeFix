@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href ="style.css">
+  <script src="https://kit.fontawesome.com/1f6873ff8c.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+  <style>
+
+    .header-textone{
+  float: left;
+  width: 50%;
+}
+
+.row:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+    </style>
+</head>
+<body>
+<nav>
+  <a href="index.html"><img src="images/logotransparency.png" class ='logo'></a>
+  <ul id = "sidemenu">
+    <li><a href="#about">Botox Story</a></li>
+    <li><a href="#treatments">Treatments</a></li>
+    <li><a href="#F&Q">f&q</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href = "booking.html" class = "btn">Book</a></li>
+    <br>
+    <br>
+    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+  </ul>
+  <i class="fa-solid fa-bars" onclick ="openmenu()"></i>
+</nav>
+
+<div id ="header-botox">
+
+  <div class = "row">
+  <div class ="header-textone">
+  <h2>Botox heaven<br></h2>
+<br>
+      <br>
+      <p>Welcome to AgeFix, <br>
+        your premier
+        destination for Botox treatments in London. </p>
+  </div>
+  <div class ="header-textone">
+    <h2>Price list<br></h2>
+  <br>
+        <br>
+        <p>men        Woman
+          1 - £169.         1. -£130
+          2-£250.         2.-£280
+          3rd FREE - crows feet - bunny lines or lip flip </p>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div id = "about">
+  <!-- <h3 class="sub-title">AgeFix Story</h3> -->
+      <div class= "container">
+            <div class = "row">
+                    <div class=" about-col-1">
+                      <img src = "images/botox.png">
+                    </div>
+                    <div class="about-col-2">
+                          <div class = "tab-titles">
+                              <p class= "tab-links active-link" onclick = "opentab('About')">What Botox is?</p>
+                              <p class = "tab-links" onclick = "opentab('mission')">How does it work</p>
+                              <p class = "tab-links" onclick = "opentab('clinic')">Is Botox safe?</p>
+                          </div>
+                          <div class = "tab-contents active-tab"  id = "About">
+                         <span><p>Botulinum toxin A (Botox A) stands out as a remarkably potent neurotoxin originating from the bacterium Clostridium botulinum. This toxin comprises two main components: a heavy chain and a light chain. The heavy chain plays a pivotal role in facilitating the toxin's entry into the presynaptic terminal, a key area in nerve cells. Once inside, the light chain of Botox A exhibits its efficacy by specifically cleaving SNAP-25, a protein critical in the process of synaptic vesicle exocytosis.
+                          In simpler terms, Botox A interferes with the normal functioning of nerve cells by preventing the release of neurotransmitters. This occurs through the cleaving of SNAP-25, a protein essential for the release of these signaling molecules. By disrupting this process, Botox A effectively blocks the communication between nerves and muscles, leading to the temporary relaxation of targeted muscles. This property makes Botox A a widely used and successful treatment in various medical and cosmetic applications, offering solutions for conditions such as muscle spasms, migraines, and the reduction of facial wrinkles.
+                          Botox A, derived from the bacterium Clostridium botulinum, is a highly effective and widely recognized neurotoxin. Let's break down what this means for you:
+                          <br>
+                          How It Works: <br>
+                          Botox A consists of two important components – a heavy chain and a light chain. The heavy chain acts as a guide, allowing the toxin to enter nerve cells, specifically the presynaptic terminal. Once inside, the light chain takes action by cleaving SNAP-25, a crucial protein involved in the release of neurotransmitters.
+                          <br><br>What It Does: <br>In simpler terms, Botox A disrupts the normal communication between nerves and muscles. By targeting and cleaving SNAP-25, it temporarily prevents the release of neurotransmitters. This interruption results in the temporary relaxation of specific muscles, making Botox A a highly sought-after solution for addressing various concerns.
+                          <br><br>Applications: <br>Botox A is not just a cosmetic treatment; it has diverse applications. In the medical realm, it is used to treat conditions such as muscle spasms and migraines. In the cosmetic field, it is renowned for its ability to reduce the appearance of facial wrinkles.
+                          <br><br>What to Expect: <br>When administered by a qualified professional, Botox A can help you achieve a smoother and more relaxed appearance by targeting and softening specific facial muscles. It's a non-invasive and temporary solution, allowing you to enjoy the benefits without the need for surgery.
+                          <br><br>Safety:<br> Safety is a priority. Botox A has a long track record of use in both medical and cosmetic settings. It is essential to receive treatments from trained and experienced professionals to ensure proper administration and optimal results.
+                          <br><br>In summary, Botox A is a powerful tool in addressing various concerns, offering a safe and effective way to temporarily enhance your natural beauty by relaxing specific muscles. If you're considering Botox A treatments, consult with our skilled team to discuss your goals and determine the best approach for you.
+                          </p></span>
+                          </div>
+                          <div class = "tab-contents" id = "clinic">
+                            <span><p>Absolutely.
+                              <br>Botox is FDA-approved for reversing lines and wrinkles. However, individuals who are pregnant, breastfeeding, or have specific neurological diseases should avoid Botox treatments.
+                              <br><br>Preparing for Treatment:<br> A week before your Botox treatment, it's advisable to abstain from alcohol and avoid blood-thinning medications or supplements to minimize the risk of bruising.
+                              <br><br>Potential Side Effects: <br>Side effects may include temporary bruising, swelling, redness, or tenderness around the injection site, which typically resolve within a few days to a week.
+                              <br><br>At AgeFix, we prioritize your comfort and safety, offering expert Botox treatments tailored to your unique needs. Join us on your journey to rediscover and celebrate your timeless beauty!</p></span>
+                           </p></span>
+                          </div>
+                          <div class = "tab-contents" id = "mission">
+                            <span><p>
+                              <br><br>How Does Botox Work? <br>
+                              Botox, a neuromodulator (a form of botulinum toxin type A), is administered with a fine needle into targeted areas. It blocks nerve signals necessary for facial muscles to contract, addressing the repetitive muscle movements that lead to lines and wrinkles. The result is a gradual reduction in the appearance of lines or wrinkles over 3-7 days following the injection.
+                              <br><br> What Areas of the Face Can Be Treated with Botox?
+                              <br>Botox is versatile and can effectively address lines and wrinkles on various facial areas, including the forehead, eye area (crow’s feet), lip lines, and even chin dimpling. It can also be used to alleviate pain from teeth grinding or TMJ and achieve a jaw-slimming effect.
+                              <br><br>What Does a Botox Treatment Feel Like?
+                              <br>Botox treatments are quick and involve minimal discomfort. No anesthesia or recovery time is needed, allowing many individuals to return to their normal activities immediately after the appointment.
+                              <br><br>Is Botox Painful? <br>The procedure is generally not considered painful. Most patients report a brief period of discomfort during the injection, which quickly subsides once the procedure is complete.
+                              <br><br>How Soon Will I See Results?<br> Results typically become noticeable within 3-5 days, with the full effects appearing within 2 weeks for some patients.
+                              <br><br>How Long Does Botox Last? <br>Botox results typically last between 3-5 months. Periodic maintenance treatments every 3-4 months can help extend these results.
+                              <br><br>When Should I Start Getting Botox?<br> There's no specific age requirement for Botox. Many individuals in their twenties are proactively using Botox to address early signs of lines and wrinkles or as a preventative measure. A consultation with a medical professional is recommended to determine the most suitable approach.</p></span>
+                          </div>
+                    </div>
+            </div>
+       </div>
+</div>
+
+
+<script>
+  window.onscroll =function(){myFunction()};
+  var navbar = document.getElementsByClassName("nav");
+  var sticky =navbar.offsetTop;
+  function myFunction(){
+    if (window.pageYOffset >= sticky){
+      navbar.classList.add("sticky")
+    }else{
+      navbar.classList.remove("sticky")
+    }
+  }
+
+  </script>
+
+<script>
+  var tablinks=document.getElementsByClassName("tab-links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+  function opentab(tabname) {
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+function openmenu (){
+  sidemenu.style.right ="0";
+}
+function closemenu (){
+  sidemenu.style.right ="-200px";
+}
+
+</script>
+</body>
+</html>

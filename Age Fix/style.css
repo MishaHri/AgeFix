@@ -12,9 +12,10 @@ html{
 
 body{
   color:#ad8528;
-  padding: 10px;
-  background-color: rgba(247, 242, 242, 0.893);
+  /* padding: 10px; */
+  background-color: white;
 }
+
 
 
 nav{
@@ -26,10 +27,11 @@ nav{
   top: 0;
   left: 0;
   width: 100%;
-  background:#f3f0e7;
+  background:white;
   z-index: 1000;
   color:#ad8528;
   align-items: center;
+  opacity: 90%;
 
 }
 
@@ -46,21 +48,22 @@ nav{
 
 .logo{
   width: 140px;
-  padding-bottom: 8px;
-  padding-top: 8px;
-  padding-left: 4px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
   display: flex;
   justify-content: center;
 }
 
 nav ul li {
+  padding-top: 10px;
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 10px 10px;
 }
 
 nav ul li a {
-  color:#c89018;
+  color:#a67814;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -91,19 +94,38 @@ nav ul li a:hover::after{
   width: 100%;
   height: 100vh;
   text-align: left;
-  margin-top: 60px;
+  margin-top: 90px;
   background: url(images/backgroundimage.jpg)no-repeat center center fixed;
+  background-size: cover;
+}
+
+#header-botox{
+  width: 100%;
+  height: 100vh;
+  text-align: left;
+  margin-top: 90px;
+  background: url(images/wall.png)no-repeat center center fixed;
   background-size: cover;
 }
 
 .header-text{
   position: absolute;
+  padding: 10px;
   bottom: 4px;
   left: 16px;
+  color: #a67814;
+ background:rgba(252, 251, 251, 0.2);
 }
+
 
 .header-text h2{
 font-size:30px;
+}
+
+.header a{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
 }
 
 /* ........presentation ........... */
@@ -132,6 +154,7 @@ font-size:30px;
   text-align: center;
 }
 
+
 .about-col-1{
   flex-basis: 35%;
 }
@@ -148,7 +171,7 @@ font-size:30px;
 .sub-title{
   font-size: 60px;
   font-weight: 600;
-  color:#ad8528;
+  color:#858277;
 }
 
 .tab-titles{
@@ -223,6 +246,15 @@ font-size:30px;
   overflow: hidden;
 }
 
+.work hr{
+  border: none;
+  width:100px;
+  height: 2px;
+  background-color: #a67814;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 .work img{
   width: 100%;
   border-radius: 10px;
@@ -271,10 +303,10 @@ color: #ad8528;
 
 .btn{
   display: block;
-  margin: 50px auto;
+  margin: 20px auto;
   width: fit-content;
   border: 1px solid #ad8528;
-  padding: 14px 50px;
+  padding: 10px 20px;
   border-radius: 6px;
   text-decoration: none;
   color:#ad8528;
@@ -385,13 +417,10 @@ input {
 }
 
 
-.contact-right{
+.contact-left p{
+  justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
-  /* text-align: center; */
-}
-
-.contact-left p{
   margin-top: 30px;
 }
 
@@ -445,6 +474,7 @@ transition: transform 0.5s;
   margin:0 auto;
 }
 
+
 form input, form textarea{
 width:100%;
 border:0;
@@ -456,13 +486,16 @@ color:#5b4208;
 font-size: 18px;
 border-radius: 6px;
 }
+.contact-inputs:focus{
+  border:2px solid #5b4208;
+}
 
 form .btn2{
   padding: 14px 60px;
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
-  color:#ad8528;
+  color:#a67814;
 
 }
 
@@ -470,7 +503,7 @@ form .btn2{
 /* ......footer..... */
 
 #footer {
-  background:#e2ddd3;
+  background:#efeae0;
   padding: 20px;
   position: relative;
   bottom: 0;
@@ -481,7 +514,7 @@ form .btn2{
 
 #footer a {
   text-decoration: none;
-  color:#ad8528;
+  color:#a67814;
 }
 
 /*
@@ -516,9 +549,6 @@ form .btn2{
   font-style: italic;
   color: #666;
 }
-
-
-
 
 
 /* ...........css for small screen ............ */
@@ -577,7 +607,7 @@ display: none;
 
 
     nav ul li a {
-      color: #543f0e;
+      color:#a67814;
     }
 
     nav ul .fa-solid{

@@ -10,13 +10,14 @@
 
 <body>
       <nav>
-        <img src = "images/logotransparency.png" class ='logo'>
+        <a href="index.html"><img src="images/logotransparency.png" class ='logo'></a>
         <ul id = "sidemenu">
           <li><a href="#about">About</a></li>
           <li><a href="#treatments">Treatments</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#F&Q">f&q</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href = "booking.html" class = "btn">Book</a></li>
           <br>
           <br>
           <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -32,12 +33,7 @@
                     <p>We offer personalised treatments
                        dedicated to improve your<br>
                        skin health and make you feel and look your very best.</p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <a href = "/" class = "btn">Book now</a>
-                </div>
+                      </div>
   </div>
 
 <!-- --------about ---------------- -->
@@ -90,7 +86,9 @@
                   <img src = "images/face.jpg">
                     <div class = "layer">
                           <h1>Botox</h1>
-                          <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                          <a href = "botox.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                          <h3>Find out more</h3>
+                          <hr>
                     </div>
               </div>
               <div class = "work">
@@ -98,6 +96,8 @@
                   <div class = "layer">
                         <h1>Profhilio</h1>
                         <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Find out more</h3>
+                        <hr>
                   </div>
             </div>
             <div class = "work">
@@ -105,19 +105,21 @@
                 <div class = "layer">
                       <h1>Seventy hyal</h1>
                       <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                      <h3>Find out more</h3>
+                      <hr>
                 </div>
             </div>
-            <div class = "work">
+            <!-- <div class = "work">
               <img src = "images/maybe.png">
                 <div class = "layer">
                       <h1>Mesotherapy</h1>
                       <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class = "container">
-        <p>Can t decide what treatment is the best for you?<br>Book now a free consutatation</p>
+        <p>Can t decide what treatment is the best for you?<br>Book now a complimentary consutatation</p>
         <a href = "" class = "btn">Book Now</a>
         </div>
 </div>
@@ -155,12 +157,13 @@
 
       <div id  = "contact">
               <h1 class = "sub-title">Contact Us </h1>
-
                     <div class = "contact-right">
-                      <form>
-                        <input type ="text" name="Name" placeholder="Your Name" required>
-                        <input type ="email" name = "email" placeholder="Your Email" required>
-                        <textarea name = "Message" rows ="6" placeholder="Your Message"></textarea>
+                      <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="d99ca4e9-37bd-4e1e-b6b7-cdb36bfd3b0c">
+                        <input type ="text" name="Name" placeholder="Your Name" class = "contact-inputs"required>
+                        <input type ="email" name = "email" placeholder="Your Email" class = "contact-inputs"required>
+                        <input type ="PHONE NUMBER" name = "phone" placeholder="Your Phone Number" class = "contact-inputs"required>
+                        <textarea name = "Message" rows ="6" placeholder="Your Message" class = "contact-inputs"></textarea>
                         <button type ="submit" class ="btn btn2">Submit</button>
                       </form>
                     </div>
@@ -225,6 +228,7 @@
                 <a href ="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>
                 <a href =""><i class="fa-brands fa-facebook"></i>
               </div>
+         </div>
          </div>
 
 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Form</title>
+  <link rel="stylesheet" href ="style.css">
+</head>
+
+<body>
+<div id ="contact">
+  <h1 class = "sub-title">Request appointment</h1>
+  <p>We Look Forward to welcoming you  to AgeFix.<br>
+  Please submit bellow your request</p>
+  <br>
+  <br>
+  <div class = "contact-left">
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="d99ca4e9-37bd-4e1e-b6b7-cdb36bfd3b0c">
+
+    <input type="text" id="name" name="name" class ="contact-inputs"placeholder="Your Name" required>
+    <input type="email" id="email" name="email" class ="contact-inputs" placeholder="Your Email"required>
+
+    <!-- Date and Time Selection -->
+    <div class = "row">
+      <div class ="date">
+    <label for="date">Select Date:</label>
+    <input type="date" id="date" name="date" class ="contact-inputs"required>
+    </div>
+    <div class ="time">
+    <label for="time">Select Time:</label>
+    <input type="time" id="time" name="time" class ="contact-inputs"required>
+    </div>
+    </div>
+    <!-- Additional Booking Details (you can customize this part based on your needs) -->
+    <label for="service"class ="contact-inputs">Select Service:</label>
+    <select id="service" name="service" required>
+      <option value="service1">Botox</option>
+      <option value="service2">Profhilio</option>
+      <option value="service2">Seventy hyal</option>
+      <!-- Add more options as needed -->
+    </select>
+    <textarea id="comments" name="comments" rows="4" class ="contact-inputs" placeholder="Additional Comments"></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit" class = "btn">Submit Booking</button>
+  </form>
+  </div>
+
+</body>
+
+</html>
