@@ -6,13 +6,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Booking Form</title>
   <link rel="stylesheet" href ="style.css">
+  <style>
+
+    #header-booking{
+  height: 50vh;
+  background: url(images/wall.png)no-repeat center center fixed;
+  background-size: cover;
+}
+/* .header-textbooking{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  padding: 20px;
+  border-radius: 12px;
+  color: #a67814;
+  background:rgba(252, 251, 251, 0.2);
+} */
+
+
+.header-textbooking h2{
+font-size:30px;
+}
+
+#contactbotox{
+  height: 80vh;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: url(images/wall.png)no-repeat center center fixed;
+}
+    </style>
 </head>
 
 <body>
-<div id ="contact">
-  <h1 class = "sub-title">Request appointment</h1>
-  <p>We Look Forward to welcoming you  to AgeFix.<br>
-  Please submit bellow your request</p>
+
+  <nav>
+    <a href="index.html"><img src="images/logotransparency.png" class ='logo'></a>
+    <ul id = "sidemenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#treatments">Treatments</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#F&Q">f&q</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <br>
+      <br>
+      <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick ="openmenu()"></i>
+  </nav>
+<!-- <div id ="header-booking">
+            <div class ="header-textbooking">
+            <h2>Request appointment</h2>
+<br>
+                <br>
+                <p>We Look Forward to welcoming you to <h3>AgeFix.</h2>
+                   <br>
+                   <br>
+                  Please submit bellow your request</p>
+                  </div>
+</div> -->
+
+<div id ="contactbotox">
   <br>
   <br>
   <div class = "contact-left">
@@ -47,6 +102,46 @@
     <button type="submit" class = "btn">Submit Booking</button>
   </form>
   </div>
+
+  <script>
+    window.onscroll =function(){myFunction()};
+    var navbar = document.getElementsByClassName("nav");
+    var sticky =navbar.offsetTop;
+    function myFunction(){
+      if (window.pageYOffset >= sticky){
+        navbar.classList.add("sticky")
+      }else{
+        navbar.classList.remove("sticky")
+      }
+    }
+
+    </script>
+
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+      }
+  </script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu (){
+    sidemenu.style.right ="0";
+  }
+  function closemenu (){
+    sidemenu.style.right ="-200px";
+  }
+
+  </script>
 
 </body>
 

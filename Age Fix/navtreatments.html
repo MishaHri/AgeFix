@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nav treatments</title>
+  <script src="https://kit.fontawesome.com/1f6873ff8c.js" crossorigin="anonymous"></script>
+  <style>
+
+nav{
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background:white;
+  z-index: 1000;
+  color:#ad8528;
+  align-items: center;
+  opacity: 90%;
+
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width:100%;
+}
+
+.sticky +.content{
+  padding-top: 40px;
+}
+
+
+.logo{
+  width: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  /* padding-top: 10px; */
+  display: inline-block;
+  list-style: none;
+  margin: 10px 10px;
+}
+
+nav ul li a {
+  color:#a67814;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background:#5b4208;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+  width:100%;
+}
+
+
+nav .fa-solid{
+display: none;
+}
+
+@media only screen and (max-width:600px){
+
+    nav .fa-solid{
+      display: block;
+      font-size: 25px;
+      color: #543f0e;
+      }
+
+    nav ul{
+      background: #bfb49b;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 120px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.5s;
+    }
+
+    nav ul li {
+      font-display: block;
+      margin:20px;
+      padding: 10px 0;
+    }
+
+
+    nav ul li a {
+      color:#a67814;
+    }
+
+    nav ul .fa-solid{
+      position: absolute;
+      top: 25px;
+      left:25px;
+      cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html"><img src="images/logotransparency.png" class ='logo'></a>
+    <ul id = "sidemenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#treatments">Treatments</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#F&Q">f&q</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href = "booking.html" class = "btn">Book</a></li>
+      <br>
+      <br>
+      <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick ="openmenu()"></i>
+  </nav>
+  <script>
+    window.onscroll =function(){myFunction()};
+    var navbar = document.getElementsByClassName("nav");
+    var sticky =navbar.offsetTop;
+    function myFunction(){
+      if (window.pageYOffset >= sticky){
+        navbar.classList.add("sticky")
+      }else{
+        navbar.classList.remove("sticky")
+      }
+    }
+
+  </script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu (){
+    sidemenu.style.right ="0";
+  }
+  function closemenu (){
+    sidemenu.style.right ="-200px";
+  }
+
+</script>
+</body>
+</html>

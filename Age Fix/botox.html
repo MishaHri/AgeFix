@@ -8,54 +8,44 @@
   <title>Document</title>
   <style>
 
-    .header-textone{
-  float: left;
-  width: 50%;
+#header-botox{
+  padding-top: 20%;
+  text-align: center;
+  width: 100%;
+  height: 50vh;
+  background: url(images/wall.png)no-repeat center center fixed;
+  background-size: cover;
 }
 
-.row:after{
-  content:"";
-  display:table;
-  clear:both;
+#header-botoxprice{
+  text-align: center;
+  width: 100%;
+  height: 70vh;
+  background: url(images/wall.png)no-repeat center center fixed;
+  background-size: cover;
 }
+
+  .header-textbotox{
+  display: inline-block;
+  border-left: 1px solidrgb(132, 44, 44)d;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+
     </style>
 </head>
 <body>
-<nav>
-  <a href="index.html"><img src="images/logotransparency.png" class ='logo'></a>
-  <ul id = "sidemenu">
-    <li><a href="#about">Botox Story</a></li>
-    <li><a href="#treatments">Treatments</a></li>
-    <li><a href="#F&Q">f&q</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href = "booking.html" class = "btn">Book</a></li>
-    <br>
-    <br>
-    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-  </ul>
-  <i class="fa-solid fa-bars" onclick ="openmenu()"></i>
-</nav>
+  <iframe src="navtreatments.html" width="100%" height="100" frameborder="0" scrolling="no"></iframe>
 
 <div id ="header-botox">
 
-  <div class = "row">
-  <div class ="header-textone">
+  <div class ="header-textbotox">
   <h2>Botox heaven<br></h2>
 <br>
-      <br>
-      <p>Welcome to AgeFix, <br>
-        your premier
+      <h3>AgeFix,</h3> <br>
+        <p>your premier
         destination for Botox treatments in London. </p>
-  </div>
-  <div class ="header-textone">
-    <h2>Price list<br></h2>
-  <br>
-        <br>
-        <p>men        Woman
-          1 - £169.         1. -£130
-          2-£250.         2.-£280
-          3rd FREE - crows feet - bunny lines or lip flip </p>
-    </div>
   </div>
 
 </div>
@@ -115,6 +105,75 @@
        </div>
 </div>
 
+<div id ="header-botoxprice">
+  <div class ="header-textbotox">
+    <h2>Price list<br></h2>
+  <br>
+      <ul>
+        <p>Man procedure</p>
+        <br>
+        <li>1st visit .............£169</li>
+        <li>2nd visit .............£250</li>
+        <li>3rd visit .............Free <br>
+        <p>crows feet - bunny lines or lip flip</p></li>
+      </ul>
+      <ul>
+        <br>
+        <br>
+        <p>Female procedure</p>
+        <br>
+        <li>1st visit .............£130</li>
+        <li>2nd visit .............£280</li>
+        <li>3rd visit .............Free <br>
+        <p>crows feet - bunny lines or lip flip</p></li>
+      </ul>
+      <br>
+      <a href = "booking.html" class = "btn">Book</a>
+      <p>*Prices subject to change due to quantity of serum used</p>
+    </div>
+  </div>
+
+
+  <div class="testimonials-container">
+    <center>
+    <h1 class = "sub-title">Testimonials </h1>
+    </center>
+    <marquee behavior="scroll" direction="left" scrollamount="4">
+    <div class="carousel">
+      <div class="testimonial">
+        <p>"Lorem ipsum dolor sit amet,
+          <br>onsectetur adipiscing elit.
+          <br>Ut elit tellus, luctus nec ullamcorper mattis,
+          <br>pulvinar dapibus leo."</p>
+        <p class="author">- John Doe</p>
+      </div>
+      <div class="testimonial">
+        <p>"Sed do eiusmod tempor incididunt
+          <br>ut labore et dolore magna aliqua.
+          <br>Ut enim ad minim veniam, quis nostrud exercitation
+          <br>ullamco laboris."</p>
+        <p class="author">- Jane Smith</p>
+      </div>
+      <div class="testimonial">
+        <p>"Sed do eiusmod tempor incididunt ut labore
+          <br>et dolore magna aliqua.
+          <br> Ut enim ad minim veniam,
+          <br> quis nostrud exercitation ullamco laboris."</p>
+        <p class="author">- Jane Smith</p>
+      </div>
+      <div class="testimonial">
+        <p>"Sed do eiusmod tempor incididunt ut
+          <br>labore et dolore magna aliqua.
+          <br>Ut enim ad minim veniam, quis nostrud exercitation
+          <br> ullamco laboris."</p>
+        <p class="author">- Jane Smith</p>
+      </div>
+    </div>
+    </marquee>
+
+  </div>
+
+  <iframe src="footer.html" width="100%" height="900" frameborder="0" scrolling="no"></iframe>
 
 <script>
   window.onscroll =function(){myFunction()};

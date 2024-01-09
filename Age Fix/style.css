@@ -22,11 +22,9 @@ nav{
   display: flex;
   position: fixed;
   justify-content: space-between;
-  flex-wrap:wrap;
   width: 100%;
   top: 0;
   left: 0;
-  width: 100%;
   background:white;
   z-index: 1000;
   color:#ad8528;
@@ -47,16 +45,13 @@ nav{
 
 
 .logo{
-  width: 140px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 10px;
+  width: 120px;
   display: flex;
   justify-content: center;
 }
 
 nav ul li {
-  padding-top: 10px;
+  /* padding-top: 10px; */
   display: inline-block;
   list-style: none;
   margin: 10px 10px;
@@ -84,6 +79,7 @@ nav ul li a:hover::after{
   width:100%;
 }
 
+
 .container{
   padding: 10px 10%;
   justify-content: center;
@@ -94,17 +90,8 @@ nav ul li a:hover::after{
   width: 100%;
   height: 100vh;
   text-align: left;
-  margin-top: 90px;
+  margin-top: 120px;
   background: url(images/backgroundimage.jpg)no-repeat center center fixed;
-  background-size: cover;
-}
-
-#header-botox{
-  width: 100%;
-  height: 100vh;
-  text-align: left;
-  margin-top: 90px;
-  background: url(images/wall.png)no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -413,46 +400,10 @@ input {
 #contact{
   justify-content: center;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
-.contact-left p{
-  justify-content: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 30px;
-}
-
-.contact-left p i{
-  color:#ad8528;
-  margin-right: 15px;
-  font-size: 20px;
-  justify-content: center;
-}
-
-.social-icons{
-  margin-top: 30px;
-}
-
-.social-icons a{
-text-decoration: none;
-font-size: 20px;
-margin-right: 15px;
-color:#ad8528;
-display: inline-block;
-transition: transform 0.5s;
-}
-
-
-.social-icons a:hover{
-  color:#5b4208;
-  transform: translateY(-5px);
-  }
-
 
 .btn.btn2{
-  /* background-color: rgba(255, 239, 184, 1); */
   display: inline-block;
   margin: 50px auto;
   width: fit-content;
@@ -497,24 +448,6 @@ form .btn2{
   cursor: pointer;
   color:#a67814;
 
-}
-
-
-/* ......footer..... */
-
-#footer {
-  background:#efeae0;
-  padding: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  color:#ad8528;
-  text-align: center;
-}
-
-#footer a {
-  text-decoration: none;
-  color:#a67814;
 }
 
 /*
@@ -582,6 +515,16 @@ display: none;
     font-size: 30px;
   }
 
+  .header-textbooking{
+    margin-top:80%;
+    font-size: 16px;
+  }
+
+  .header-text h1{
+    font-size: 30px;
+  }
+
+
     nav .fa-solid{
       display: block;
       font-size: 25px;
@@ -603,6 +546,7 @@ display: none;
     nav ul li {
       font-display: block;
       margin:20px;
+      padding: 10px 0;
     }
 
 
@@ -636,9 +580,6 @@ display: none;
     }
     .contact-right{
       flex-basis: 100%;
-    }
-    .footer {
-      font-size: 14px;
     }
     .work-list {
       grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
