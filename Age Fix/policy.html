@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Policy</title>
+  <script src="https://kit.fontawesome.com/1f6873ff8c.js" crossorigin="anonymous"></script>
+<style>
+
+  *{
+  margin: 0;
+  padding: 0;
+  font-family: Futura;
+  box-sizing: border-box;
+}
+
+body{
+  color:white;
+  background-color:white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.policy i{
+text-decoration: none;
+font-size: 20px;
+margin-right: 15px;
+color:#655d4b;
+display: inline-block;
+transition: transform 0.5s;
+}
+
+
+.policy i:hover{
+  color:#5b4208;
+  transform: translateY(-5px);
+  }
+
+.policy-text{
+  color:white;
+  /* padding: 10px; */
+  background-color: #ad8528;
+  border-radius: 12px;
+}
+
+.policy{
+  /* padding: 10px; */
+  background-color: white;
+opacity: 90%;
+}
+
+.policy h2{
+  color: #ad8528;
+}
+
+.policy-text h3{
+  color: rgb(113, 103, 103);
+}
+
+
+.logo{
+  width: 140px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ad8528;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#5b4208;
+}
+
+</style>
+</head>
+<body>
+  <img src="images/logotransparency.png" class ='logo'>
+  <div class ="policy">
+    <a href="policy.html" result="disallow" onclick="return CloseMySelf(this);"><i class="fa-solid fa-xmark"></a>
+    <!-- <a href="index.html"><i class="fa-solid fa-xmark"></a> -->
+    <div class = "policy-text">
+      <h2> Dear Customers,</h2>
+      <br>
+      <p>
+  Before securing an appointment with Age Fix, we extend our heartfelt gratitude and kindly request a moment to familiarize yourself with our clinic's terms and conditions. <br>These guidelines are meticulously crafted to uphold the highest standards of service while prioritizing the safety and satisfaction of both you and our esteemed clinic.<br> Your agreement to adhere to the terms and conditions outlined below ensures a harmonious and exceptional experience.</p>
+  <br>
+  <h3>
+  AGE FIX TERMS AND CONDITIONS</h3>
+  <br>
+  <p>Contact Information:<br>
+    To facilitate seamless communication, we kindly ask all clients to provide accurate contact details, including address, telephone, and email when securing an appointment.
+
+  <br>
+  Medical History Form:<br>
+  For your well-being, a comprehensive medical history form is a requisite at your appointment, aiding us in tailoring consultations and treatment plans to your specific needs.
+  <br>Confidentiality:<br>
+  Rest assured, all your information is treated with utmost confidentiality and protected in strict accordance with Data Protection legislation.
+  <br>Mailing List: <br>
+  Should you prefer, clients can effortlessly unsubscribe from our mailing list at any time.
+  <br>Booking Fee:<br>
+  £50 booking fee is graciously requested to secure your treatment appointment, a portion of which is deducted from the total on the day of the procedure. Kindly note that booking fees are non-refundable under any circumstances..  or ? full details card for full protection?
+  <br>Late Arrival Policy:<br>
+  To ensure punctuality and optimal service, we kindly request our valued clients to arrive on time. Clients arriving more than 10 minutes late may be regrettably refused treatment, leading to the forfeiture of the booking fee.
+  <br>Medical Fitness:<br>
+  Clients who may be medically unfit for treatment are kindly advised that we may need to postpone or refrain from providing treatment.
+  <br>Cancellation Policy:<br>
+  A 48-hour cancellation policy is in place. We sincerely appreciate your understanding that failure to provide advance notice results in the forfeiture of the booking fee.
+  <br>Re-scheduling:<br>
+  Recognizing unforeseen circumstances, clients can reschedule appointments up to 7 DAYS before the scheduled date. Kindly note that failure to do so within this period results in the loss of the booking fee.
+  <br>Booking Transfer:<br>
+  Regrettably, bookings and associated fees cannot be transferred to another individual.
+  <br>Children Policy:<br>
+  To maintain a serene environment, children under 18 are not permitted on the premises. We kindly request compliance to avoid any inconvenience or loss of the booking fee.
+  <br>
+  <br>BOOKING FEES ARE NON-REFUNDABLE<br>
+  Payment:<br> To ensure a smooth and efficient experience, full payment is sincerely appreciated at the time of treatment. We accept payments in cash or major debit and credit cards.
+  Refunds: <br>Kindly note that all packages and treatments are non-refundable and non-transferable.
+  Reviews:<br> Your valuable feedback, whether positive or constructive, is genuinely appreciated and can be submitted verbally, via email, or through our clinic website.
+  <br>Client Feedback:<br> Promptly share any concerns or suggestions with us, as we are dedicated to prioritizing your satisfaction and continuously enhancing our services.
+
+  <br><br>Under No Circumstances Can We Treat:
+  <br>
+  <ul>
+    <li>Individuals under 18 (ID REQUIRED)</li>
+    <li>Those on specific skin medications</li>
+    <li>Those with active cold sores or oral herpes</li>
+    <li>Individuals with various medical conditions (chemotherapy, epilepsy, pregnancy, etc.)</li>
+    <li>Individuals with allergies and certain skin conditions</li>
+    <li>Those with recent use of laser or chemical peeling</li>
+    <li>Individuals with glaucoma or taking blood-thinning medication</li>
+    <li>Diabetics, individuals with high blood pressure, or mitral valve disorders</li>
+  </ul>
+  <p>
+  Thank you for entrusting Age Fix with your beauty and well-being.
+  We eagerly anticipate the privilege of providing you with an exceptional and delightful service.
+  </p>
+  </div>
+  <h2>Sincerely,<br>
+    AgeFix</h2>
+ </div>
+<br>
+<h2>Sincerely,<br>
+AgeFix</h2>
+
+<script>
+  function CloseMySelf(sender) {
+    try {
+        window.opener.HandlePopupResult(sender.getAttribute("result"));
+    }
+    catch (err) {}
+    window.close();
+    return false;
+}
+  </script>
+</body>
+</html>

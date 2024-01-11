@@ -9,15 +9,29 @@
   <style>
 
 #header-botox{
-  padding-top: 20%;
-  text-align: center;
   width: 100%;
-  height: 50vh;
-  background: url(images/wall.png)no-repeat center center fixed;
+  height: 100vh;
+  background: url(images/man\ \ face.png)no-repeat center center fixed;
   background-size: cover;
+  padding-left: 40px;
 }
 
-#header-botoxprice{
+
+.header-textbotox{
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  padding: 15px;
+  color:black;
+  text-align: center;
+  background-color: blanchedalmond;
+  opacity: 50%;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+
+#botoxprice{
   text-align: center;
   width: 100%;
   height: 70vh;
@@ -25,7 +39,7 @@
   background-size: cover;
 }
 
-  .header-textbotox{
+  .textbotox{
   display: inline-block;
   border-left: 1px solidrgb(132, 44, 44)d;
   padding: 1rem 1rem;
@@ -33,21 +47,57 @@
 }
 
 
+#tretment-sumary{
+  color:white;
+  text-align: center;
+  padding: 10px;
+  background-color:#bd880b;
+}
+
+
+.column-tretment{
+  float: left;
+  width: 25%;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.benefits li{
+  background-image: url(i/bullet.gif) no-repeat center left;
+  padding-left: 20px;
+  display: inline;
+}
+
+
+
+.column-tretmentlast{
+  background-color: white;
+  color: #bd880b;
+  padding: 5px;
+  border-radius: 8px;
+}
+
     </style>
 </head>
 <body>
-  <iframe src="navtreatments.html" width="100%" height="100" frameborder="0" scrolling="no"></iframe>
 
 <div id ="header-botox">
-
   <div class ="header-textbotox">
-  <h2>Botox heaven<br></h2>
-<br>
-      <h3>AgeFix,</h3> <br>
-        <p>your premier
-        destination for Botox treatments in London. </p>
-  </div>
-
+    <h2>AgeFix,</h2> <br>
+  <h3>Botox heaven</h3>
+  <br><p>your premier
+   destination for Botox treatments in London. </p>
+</div>
 </div>
 
 
@@ -105,8 +155,48 @@
        </div>
 </div>
 
-<div id ="header-botoxprice">
-  <div class ="header-textbotox">
+<div id ="tretment-sumary">
+  <h2>Tretment Sumary</h2>
+<div class = "row">
+  <div class = "column-tretment">
+    <p>Application</p><br>
+    <i class="fa-solid fa-syringe"></i>
+  </div>
+  <div class = "column-tretment">
+    <p>Procedure <br>time</p>
+    <i class="fa-solid fa-clock"></i>
+  </div>
+  <div class = "column-tretment">
+    <p>Recovery <br>Time</p>
+    <i class="fa-regular fa-clock"></i>
+    <br>
+    <p>5-7 days</p>
+  </div>
+  <div class = "column-tretment">
+    <p>Discomfort <br> Level</p>
+    <i class="fa-solid fa-face-smile"></i>
+  </div>
+  <div class = "column-tretmentlast">
+    <p>Price<br>from</p>
+    <h3>co£</h3>
+  </div>
+  <div class = "benefits">
+  <h3>Benefits</h3>
+  <li>
+    <ul>Skin Smoothing</ul>
+    <ul>Anti-ageing</ul>
+    <ul>Radiance</ul>
+  </li>
+  </div>
+
+
+ </div>
+
+
+</div>
+
+<div id ="botoxprice">
+  <div class ="textbotox">
     <h2>Price list<br></h2>
   <br>
       <ul>
@@ -173,8 +263,7 @@
 
   </div>
 
-  <iframe src="footer.html" width="100%" height="900" frameborder="0" scrolling="no"></iframe>
-
+  <iframe src="footer.html" width="100%" height="1100" frameborder="0" scrolling="no"></iframe>
 <script>
   window.onscroll =function(){myFunction()};
   var navbar = document.getElementsByClassName("nav");
