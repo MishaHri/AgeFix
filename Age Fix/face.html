@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Face</title>
+    <link rel="stylesheet" href ="style.css">
     <script src="https://kit.fontawesome.com/1f6873ff8c.js"
     crossorigin="anonymous"></script>
     <style>
@@ -146,7 +147,21 @@
   </head>
 
   <body>
-
+    <nav>
+      <a href="index.html"><img src="images/logotransparency.png" class ='logo'></a>
+      <ul id = "sidemenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#treatments">Treatments</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#F&Q">f&q</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href = "booking.html" class = "btn">Book</a></li>
+        <br>
+        <br>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick ="openmenu()"></i>
+    </nav>
   <div class = "header">
     <h1>Welcome to AgeFix<br> Face Treatments </h1><br>
       <h2>where radiant beauty meets optimal health.</h2>
