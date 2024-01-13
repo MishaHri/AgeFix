@@ -10,7 +10,6 @@
 
 *{
   margin: 0;
-  padding: 10px;
   font-family: Futura;
   box-sizing: border-box;
 }
@@ -47,37 +46,24 @@ body{
   width: fit-content;
 }
 
-
-#botoxprice{
-  text-align: center;
-  width: 100%;
-  height: 70vh;
-  background: url(images/wall.png)no-repeat center center fixed;
-  background-size: cover;
-}
-
-  .textbotox{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-}
-
-
 #tretment-sumary{
+  padding: 20px;
   background-color: #ad8528;
   color:white;
   text-align: center;
+  border-radius: 12px;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .column-tretment{
 border-radius: 10px;
 border:3px solid white;
+padding:30px;
 }
 
 
 .benefits ul{
-  /* padding-left: 20px; */
   display: inline-block;
   color: white;
 }
@@ -85,13 +71,14 @@ border:3px solid white;
 
 .botox-punch-line{
   text-align: center;
-  padding: 10px;
+  padding: 30px;
   color: black;
 }
 
 .booknow{
 color: antiquewhite;
 text-decoration: none;
+text-align: center;
 }
 
 .booknow:hover{
@@ -99,6 +86,7 @@ text-decoration: none;
 }
 
 .dropdownmenu{
+  padding: 20px;
   display: flex;
 }
 /* Dropdown Button */
@@ -135,6 +123,7 @@ text-decoration: none;
   z-index: 1;
   text-align: center;
   border-radius: 12px;
+  padding: 20px;
 }
 
 /* Links inside the dropdown */
@@ -209,6 +198,16 @@ color: #ad8528;
   width: fit-content;
 }
 
+
+.column-tretment{
+padding:10px;
+}
+
+#tretment-sumary{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 }
 
     </style>
@@ -248,6 +247,7 @@ color: #ad8528;
 
   <div id ="tretment-sumary">
   <h2>Tretment Sumary</h2>
+  <br>
 <div class = "row">
   <div class = "column-tretment">
     <p>Application</p>
@@ -270,12 +270,14 @@ color: #ad8528;
   </div>
   </div>
   <div class = "benefits">
+    <br>
   <h3>Benefits</h3>
   <ul style="list-style-type:square">
     <li>Skin Smoothing</li>
     <li>Anti-ageing</li>
     <li>Radiance</li>
   </ul>
+  <br>
   <div class = "booknow">
   <a href = "booking.html">Book now a complimentary consultation</a>
   </div>
@@ -293,6 +295,7 @@ color: #ad8528;
     <a href="#">crows feet - bunny lines or lip flip</a>
     <a href = "booking.html" class = "btn">Book</a>
     <p>*Prices subject to change due to quantity of serum used</p>
+    <p>*See Terms& conditions for more details</p>
   </div>
 </div>
 <div class="dropdowntwo">
@@ -304,6 +307,7 @@ color: #ad8528;
     <a href="#">crows feet - bunny lines or lip flip</a>
     <a href = "booking.html" class = "btn">Book</a>
     <p>*Prices subject to change due to quantity of serum used</p>
+    <p>*See Company Policy for booking details</p>
   </div>
 </div>
 </div>
@@ -460,7 +464,7 @@ color: #ad8528;
 
   </div>
 
-  <iframe src="footer.html" width="100%" height="1100" frameborder="0" scrolling="no"></iframe>
+  <iframe src="footer.html" width="100%" height="1200" frameborder="0" scrolling="no"></iframe>
 <script>
   window.onscroll =function(){myFunction()};
   var navbar = document.getElementsByClassName("nav");
@@ -491,33 +495,32 @@ color: #ad8528;
 </script>
 
 <script>
-  window.onclick = function(event) {
-    // Close the Female services dropdown if the clicked element is not the dropbtn
-    if (!event.target.matches('.dropbtn-female')) {
-      var dropdownFemale = document.getElementById("myDropdown");
-      if (dropdownFemale.classList.contains('show')) {
-        dropdownFemale.classList.remove('show');
-      }
-    }
-
-    // Close the Male services dropdown if the clicked element is not the dropbtn
-    if (!event.target.matches('.dropbtn-male')) {
-      var dropdownMale = document.getElementById("myDropdowntwo");
-      if (dropdownMale.classList.contains('showtwo')) {
-        dropdownMale.classList.remove('showtwo');
-      }
-    }
-  }
-
-  function myFunction() {
+function myFunction() {
     var dropdownFemale = document.getElementById("myDropdown");
     dropdownFemale.classList.toggle("show");
-  }
+}
 
-  function myFunctiontwo() {
+function myFunctiontwo() {
     var dropdownMale = document.getElementById("myDropdowntwo");
     dropdownMale.classList.toggle("showtwo");
-  }
+}
+
+// Close the dropdowns if the user clicks outside of them
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn-female')) {
+        var dropdownFemale = document.getElementById("myDropdown");
+        if (dropdownFemale.classList.contains('show')) {
+            dropdownFemale.classList.remove('show');
+        }
+    }
+
+    if (!event.target.matches('.dropbtn-male')) {
+        var dropdownMale = document.getElementById("myDropdowntwo");
+        if (dropdownMale.classList.contains('showtwo')) {
+            dropdownMale.classList.remove('showtwo');
+        }
+    }
+}
 </script>
 
 
