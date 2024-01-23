@@ -6,37 +6,126 @@
   <title>Age Fix</title>
   <link rel="stylesheet" href ="style.css">
   <script src="https://kit.fontawesome.com/1f6873ff8c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.cdnfonts.com/css/futura-medium" rel="stylesheet">
+
 </head>
 
 <body>
       <nav>
+        <div class = "logo">
         <a href="index.html"><img src="images/logotransparency.png" class ='logo'></a>
+        </div>
+        <div class = "menu">
         <ul id = "sidemenu">
           <li><a href="#about">About</a></li>
           <li><a href="#treatments">Treatments</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#F&Q">f&q</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="academy.html">Academy</a></li>
+          <li><div class="dropdown">
+            <button class="dropbtn">Terms and Condition</button>
+            <div class="dropdown-content">
+              <a href="policy.html">T&C</a>
+              <a href="cookies.html">Cookies</a>
+            </div>
+          </div>
+
+          <li><a href="contactform.html">Contact</a></li>
           <li><a href = "booking.html" class = "btn">Book</a></li>
           <br>
           <br>
           <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" onclick ="openmenu()"></i>
+       </div>
       </nav>
-
-
   <div id ="header">
                 <div class ="header-text">
-                <h2>Welcome to <br>AgeFix<br></h2>
+                <h2>WELCOME</h2>
 <br>
-                     <h3> Where Time Meets Beauty!</h3>
-                    <br>
-                    <p>We offer personalised treatments
-                       dedicated to improve your<br>
-                       skin health and make you feel and look your very best.</p>
+                     <h3>to AgeFix ....<br> your haven for rejuvenation and timeless beauty. At our aesthetic sanctuary, we blend artistry with expertise to bring you personalized Anti Wrinkle Injections  and Skin Booster treatments. Step into a realm where your natural radiance is our priority. Explore our transformative services designed to enhance your beauty and elevate your confidence. Trust us to unveil your timeless allure.
+                      Welcome to a place where every visit is a journey to the best version of yourself.</h3>
                       </div>
   </div>
+
+    <!-- <div class ="punchline">
+        <h3> At our aesthetic sanctuary, we blend artistry with expertise to bring you personalized Anti Wrinkle Injections
+          and Skin Booster treatments. Step into a realm where your natural radiance is our priority.
+          Explore our transformative services designed to enhance your beauty and elevate your confidence.
+          Trust us to unveil your timeless allure.
+          Welcome to a place where every visit is a journey to the best version of yourself.</h3>
+     </div> -->
+
+     <div id="booking-form-container">
+        <div id="booking-form">
+            <span id="close-btn" onclick="closeForm()">&times;</span>
+            <h2>Booking Form</h2>
+            <!-- Add your form fields here -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+
+    <div id="booking-icon" onclick="openForm()">&#9993;</div>
+
+    <script>
+        function openForm() {
+            document.getElementById("booking-form-container").style.right = "0";
+        }
+
+        function closeForm() {
+            document.getElementById("booking-form-container").style.right = "-300px";
+        }
+    </script>
+
+
+  <!-- ...........treatments................ -->
+
+    <div id = "treatments">
+            <div class ="container">
+          <h2 class="sub-title">AgeFix Treatments</h2>
+              <div class = "work-list">
+                  <div class = "work">
+                      <img src = "images/234.png">
+                        <div class = "layer">
+                          <br>
+                              <h2>FaceFix</h2>
+                              <br>
+                              <a href = "face.html">Find out more</a>
+                              <hr>
+                        </div>
+                  </div>
+                  <div class = "work">
+                    <img src = "images/15 2.png">
+                      <div class = "layer">
+                        <br>
+                            <h2>BodyFix</h2>
+                            <br>
+                            <a href = "face.html">Find out more</a>
+                            <hr>
+                      </div>
+                </div>
+                <div class = "work">
+                  <img src = "images/hair-2.png">
+                    <div class = "layer">
+                      <br>
+                          <h2>HairFix</h2>
+                          <br>
+                          <a href = "face.html">Find out more</a>
+                          <hr>
+                    </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
+  <div class = "punchline">
+    <h3>Can t decide what treatment is the best for you?<br> <br>Book now a complimentary consutatation</h3>
+    <a href = "" class = "btn">Book Now</a>
+    </div>
 
 <!-- --------about ---------------- -->
   <div id = "about">
@@ -44,7 +133,7 @@
         <div class= "container">
               <div class = "row">
                       <div class=" about-col-1">
-                        <img src = "images/profile.png">
+                        <img src = "images/profile1.jpeg">
                       </div>
                       <div class="about-col-2">
                             <div class = "tab-titles">
@@ -63,7 +152,7 @@
                             </p></span>
                             </div>
                             <div class = "tab-contents" id = "vision">
-                              <span><p>At Age Fix, we envision a world where individuals confidently embrace their inherent, ageless beauty.
+                              <span><br><p>At Age Fix, we envision a world where individuals confidently embrace their inherent, ageless beauty.
                                 Our vision is to be a guiding light in the transformative journey of unlocking and maintaining timeless beauty,
                                  fostering a culture where each person radiates confidence and authenticity.
                                 </p></span>
@@ -102,60 +191,16 @@
          </div>
   </div>
 
-  <!-- ...........treatments................ -->
-
-<div id = "treatments">
-        <div class ="container">
-      <h1 class="sub-title">Treatments</h1>
-          <div class = "work-list">
-              <div class = "work">
-                  <img src = "images/2.png">
-                    <div class = "layer">
-                      <br><br><br>
-                          <h1>Face</h1>
-                          <br>
-                          <a href = "face.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                          <h3>Find out more</h3>
-                          <hr>
-                    </div>
-              </div>
-              <div class = "work">
-                <img src = "images/BODY REAL.png">
-                  <div class = "layer">
-                    <br><br><br>
-                        <h1>Body</h1>
-                        <br>
-                        <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <h3>Find out more</h3>
-                        <hr>
-                  </div>
-            </div>
-            <div class = "work">
-              <img src = "images/hair-2.png">
-                <div class = "layer">
-                  <br><br><br>
-                      <h1>Hair</h1>
-                      <br>
-                      <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                      <h3>Find out more</h3>
-                      <hr>
-                </div>
-            </div>
-          </div>
+<!-- ----------------Blog-------------- -->
+        <div class = "punchline">
+          <h3>If you are looking to adopt a more helthy life style?<br>
+            <br>We are happy to share our journey with you.
+            <br> Read our blog posts for more details.</h3>
         </div>
-        <div class = "container">
-        <p>Can t decide what treatment is the best for you?<br>Book now a complimentary consutatation</p>
-        <a href = "" class = "btn">Book Now</a>
-        </div>
-</div>
-
-        <!-- ----------------Blog-------------- -->
-
       <div id = "blog">
           <div class ="container">
             <h1 class="sub-title">Skin Education & Life Style</h1>
             <br>
-            <p>If you are looking to adopt a more helthy life style?<br>We are happy to share our journey with you.<br> Read our blog posts for more.</p>
                 <div class = "services-list">
                           <div>
                             <img src = "images/water.png">
@@ -178,27 +223,26 @@
                 </div>
           </div>
       </div>
-<!-- ...........contact form ......... -->
-
-      <div id  = "contact">
-              <h1 class = "sub-title">Contact Us </h1>
-                    <div class = "contact-right">
-                      <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="d99ca4e9-37bd-4e1e-b6b7-cdb36bfd3b0c">
-                        <input type ="text" name="Name" placeholder="Your Name" class = "contact-inputs"required>
-                        <input type ="email" name = "email" placeholder="Your Email" class = "contact-inputs"required>
-                        <input type ="PHONE NUMBER" name = "phone" placeholder="Your Phone Number" class = "contact-inputs"required>
-                        <textarea name = "Message" rows ="6" placeholder="Your Message" class = "contact-inputs"></textarea>
-                        <button type ="submit" class ="btn btn2">Submit</button>
-                      </form>
-                    </div>
+      <div class = "punchline">
+        <h3>Want to hear first about or latest news and offers?
+          <br>We got you covered</h3>
+        </div>
+      <div class="newsletter-container">
+        <br> <h3>Subscribe to our news letter </h3>
+      <form action="#" method="post" class="newsletter-form">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <button type ="submit" class ="btn">Subscribe</button>
+      </form>
+    </div>
+      <div class = "punchline">
+        <h3>If you have any question for us? Do not hesitate to get in touch</h3>
+        <a href = "contactform.html" class = "btn">Get in touch</a>
       </div>
-
       <div class="testimonials-container">
         <center>
         <h1 class = "sub-title">Testimonials </h1>
         </center>
-        <marquee behavior="scroll" direction="left" scrollamount="4">
+        <!-- <marquee behavior="scroll" direction="left" scrollamount="4"> -->
         <div class="carousel">
           <div class="testimonial">
             <p>"Lorem ipsum dolor sit amet,
@@ -232,17 +276,15 @@
         </marquee>
 
       </div>
-
-      <div class="newsletter-container">
-        <h2>Subscribe to Our Newsletter</h2>
-        <form action="#" method="post" class="newsletter-form">
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
-          <button type ="submit" class ="btn btn2">Subscribe</button>
-        </form>
+      <div class = "punchline-academy">
+        <h2>AgeFix Academy</h2>
+        <br>
+        <p>*Next availeble session starting August 2024</p>
+        <a href = "" class = "btn">Enroll Now</a>
       </div>
 
 
-      <iframe src="footer.html" width="100%" height="1200" frameborder="0" scrolling="no"></iframe>
+      <iframe src="footer.html" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
 
   <script>
     window.onscroll =function(){myFunction()};

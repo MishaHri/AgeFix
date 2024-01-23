@@ -8,43 +8,19 @@
   <title>Document</title>
   <style>
 
-*{
-  margin: 0;
-  font-family: Futura;
-  box-sizing: border-box;
-}
-
 html{
   scroll-behavior: smooth;
 }
 
 
-body{
-  color:black;
-  background-color: white;
-}
-
 #header-botox{
   width: 100%;
   height: 100vh;
-  background: url(images/16.png)repeat center center fixed;
+  margin-top: 100px;
+  background: url(images/botox.jpg)repeat center center fixed;
   background-size: cover;
 }
 
-
-.header-textbotox{
-  position: absolute;
-  top: 80%;
-  left: 60%;
-  right: 10%;
-  padding: 5px;
-  color:rgb(174, 40, 40);
-  text-align: center;
-  background-color: blanchedalmond;
-  opacity: 50%;
-  border-radius: 12px;
-  width: fit-content;
-}
 
 #tretment-sumary{
   padding: 20px;
@@ -54,7 +30,10 @@ body{
   border-radius: 12px;
   margin-left: 25%;
   margin-right: 25%;
+  margin-top: 10px;
 }
+
+
 
 .column-tretment{
 border-radius: 10px;
@@ -77,8 +56,13 @@ padding:30px;
 
 .booknow{
 color: antiquewhite;
-text-decoration: none;
 text-align: center;
+margin-top: 5px;
+}
+
+.booknow a{
+color: antiquewhite;
+text-decoration: none;
 }
 
 .booknow:hover{
@@ -88,6 +72,7 @@ text-align: center;
 .dropdownmenu{
   padding: 20px;
   display: flex;
+justify-content: center;
 }
 /* Dropdown Button */
 .dropbtn {
@@ -112,6 +97,7 @@ text-align: center;
   position: relative;
   display: inline-block;
 }
+
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -143,6 +129,7 @@ text-align: center;
 .dropdowntwo {
   position: relative;
   display: inline-block;
+  margin-left: 10px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -173,6 +160,10 @@ color: #ad8528;
 
 .showtwo {display:block;}
 
+.tretment-box{
+  padding: 10px;
+}
+
 
 @media only screen and (max-width:600px){
 
@@ -184,53 +175,52 @@ color: #ad8528;
 }
 
 
-.header-textbotox{
-  position: absolute;
-  top: 70%;
-  left: 30%;
-  right: 10%;
-  padding: 5px;
-  color:rgb(174, 40, 40);
-  text-align: center;
-  background-color: blanchedalmond;
-  opacity: 50%;
-  border-radius: 12px;
-  width: fit-content;
-}
-
 
 .column-tretment{
 padding:10px;
 }
 
-#tretment-sumary{
-  margin-left: 10%;
-  margin-right: 10%;
-}
+#tretment-sumary {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .column-tretment {
+    padding: 10px;
+  }
 
 }
 
     </style>
 </head>
-<nav>
-  <a href="face.html"><img src="images/logotransparency.png" class ='logo'></a>
-  <ul id = "sidemenu">
-    <li><a href="#about">About</a></li>
-    <li><a href="#treatments">Treatments</a></li>
-    <li><a href="#blog">Blog</a></li>
-    <li><a href="#F&Q">f&q</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href = "booking.html" class = "btn">Book</a></li>
-    <br>
-    <br>
-    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-  </ul>
-  <i class="fa-solid fa-bars" onclick ="openmenu()"></i>
-</nav>
 <body>
+  <nav>
+    <div class = "logo">
+    <a href="index.html"><img src="images/logotransparency.png" class ='logo'></a>
+    </div>
+    <div class = "menu">
+    <ul id = "sidemenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#treatments">Treatments</a></li>
+      <li><a href="academy.html">Academy</a></li>
+      <li><div class="dropdown">
+        <button class="dropbtn">F&q</button>
+        <div class="dropdown-content">
+          <a href="policy.html">T&C</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
 
+      <li><a href="#contact">Contact</a></li>
+      <li><a href = "booking.html" class = "btn">Book</a></li>
+      <br>
+      <br>
+      <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick ="openmenu()"></i>
+   </div>
+  </nav>
 <div id ="header-botox">
-  <div class ="header-textbotox">
+  <div class ="header-text">
     <h2>AgeFix,</h2>
   <h3>Botox heaven.</h3>
   <p>Your premier
@@ -238,16 +228,18 @@ padding:10px;
 </div>
 </div>
 
-<div class = "botox-punch-line">
+<div class = "punchline">
   <h3>Non-surgical procedure enhancing facial aesthetics
     by relaxing muscles, reducing wrinkles, and promoting a smoother,
     youthful appearance.
   </h3>
 </div>
 
+
   <div id ="tretment-sumary">
   <h2>Tretment Sumary</h2>
   <br>
+  <div class ="treatment">
 <div class = "row">
   <div class = "column-tretment">
     <p>Application</p>
@@ -281,6 +273,8 @@ padding:10px;
   <div class = "booknow">
   <a href = "booking.html">Book now a complimentary consultation</a>
   </div>
+</div>
+</div>
 </div>
 
  </div>
@@ -316,7 +310,7 @@ padding:10px;
       <div class= "container">
             <div class = "row">
                     <div class=" about-col-1">
-                      <img src = "images/botox.png">
+                      <img src = "images/24.png">
                     </div>
                     <div class="about-col-2">
                           <div class = "tab-titles">
@@ -366,17 +360,22 @@ padding:10px;
        </div>
 </div>
 
+<div class = "punchline">
+  <h3>How to prepare for the tretment?</h3>
+  <br>
+  <p>Read bellow AgeFix advice</p>
+</div>
+
 <div id = "about">
   <div class= "container">
-    <h3>How to prepare for the treatment</h3>
         <div class = "row">
                 <div class="about-col-2">
                       <div class = "tab-titles">
                           <p class= "tab-links active-link" onclick = "opentab('About')">Before</p>
-                          <p class = "tab-links" onclick = "opentab('mission')">After</p>
-                          <p class = "tab-links" onclick = "opentab('clinic')">Results</p>
+                          <p class = "tab-links" onclick = "opentab('after')">After</p>
+                          <p class = "tab-links" onclick = "opentab('results')">Results</p>
                       </div>
-                      <div class = "tab-contents active-tab"  id = "About">
+                      <div class = "tab-contents active-tab"  id = "Before">
                         <div class = "move-button">
                      <span><p>Botulinum toxin A (Botox A) stands out as a remarkably potent neurotoxin originating from the bacterium Clostridium botulinum. This toxin comprises two main components: a heavy chain and a light chain. The heavy chain plays a pivotal role in facilitating the toxin's entry into the presynaptic terminal, a key area in nerve cells. Once inside, the light chain of Botox A exhibits its efficacy by specifically cleaving SNAP-25, a protein critical in the process of synaptic vesicle exocytosis.
                       In simpler terms, Botox A interferes with the normal functioning of nerve cells by preventing the release of neurotransmitters. This occurs through the cleaving of SNAP-25, a protein essential for the release of these signaling molecules. By disrupting this process, Botox A effectively blocks the communication between nerves and muscles, leading to the temporary relaxation of targeted muscles. This property makes Botox A a widely used and successful treatment in various medical and cosmetic applications, offering solutions for conditions such as muscle spasms, migraines, and the reduction of facial wrinkles.
@@ -392,7 +391,7 @@ padding:10px;
                       </p></span>
                       </div>
                       </div>
-                      <div class = "tab-contents" id = "clinic">
+                      <div class = "tab-contents" id = "after">
                         <span><p>Absolutely.
                           <br>Botox is FDA-approved for reversing lines and wrinkles. However, individuals who are pregnant, breastfeeding, or have specific neurological diseases should avoid Botox treatments.
                           <br><br>Preparing for Treatment:<br> A week before your Botox treatment, it's advisable to abstain from alcohol and avoid blood-thinning medications or supplements to minimize the risk of bruising.
@@ -400,7 +399,7 @@ padding:10px;
                           <br><br>At AgeFix, we prioritize your comfort and safety, offering expert Botox treatments tailored to your unique needs. Join us on your journey to rediscover and celebrate your timeless beauty!</p></span>
                        </p></span>
                       </div>
-                      <div class = "tab-contents" id = "mission">
+                      <div class = "tab-contents" id = "results">
                         <span><p>
                           <br><br>How Does Botox Work? <br>
                           Botox, a neuromodulator (a form of botulinum toxin type A), is administered with a fine needle into targeted areas. It blocks nerve signals necessary for facial muscles to contract, addressing the repetitive muscle movements that lead to lines and wrinkles. The result is a gradual reduction in the appearance of lines or wrinkles over 3-7 days following the injection.
@@ -423,46 +422,7 @@ padding:10px;
 
 <div class = "booknow">
   <a href = "booking.html">Book now a complimentary consultation</a>
-  </div>
-
-  <div class="testimonials-container">
-    <center>
-    <h1 class = "sub-title">Testimonials </h1>
-    </center>
-    <marquee behavior="scroll" direction="left" scrollamount="4">
-    <div class="carousel">
-      <div class="testimonial">
-        <p>"Lorem ipsum dolor sit amet,
-          <br>onsectetur adipiscing elit.
-          <br>Ut elit tellus, luctus nec ullamcorper mattis,
-          <br>pulvinar dapibus leo."</p>
-        <p class="author">- John Doe</p>
-      </div>
-      <div class="testimonial">
-        <p>"Sed do eiusmod tempor incididunt
-          <br>ut labore et dolore magna aliqua.
-          <br>Ut enim ad minim veniam, quis nostrud exercitation
-          <br>ullamco laboris."</p>
-        <p class="author">- Jane Smith</p>
-      </div>
-      <div class="testimonial">
-        <p>"Sed do eiusmod tempor incididunt ut labore
-          <br>et dolore magna aliqua.
-          <br> Ut enim ad minim veniam,
-          <br> quis nostrud exercitation ullamco laboris."</p>
-        <p class="author">- Jane Smith</p>
-      </div>
-      <div class="testimonial">
-        <p>"Sed do eiusmod tempor incididunt ut
-          <br>labore et dolore magna aliqua.
-          <br>Ut enim ad minim veniam, quis nostrud exercitation
-          <br> ullamco laboris."</p>
-        <p class="author">- Jane Smith</p>
-      </div>
-    </div>
-    </marquee>
-
-  </div>
+</div>
 
   <iframe src="footer.html" width="100%" height="1200" frameborder="0" scrolling="no"></iframe>
 <script>
@@ -522,8 +482,6 @@ window.onclick = function(event) {
     }
 }
 </script>
-
-
 
 <script>
 var sidemenu = document.getElementById("sidemenu");

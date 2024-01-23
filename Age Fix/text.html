@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow: hidden;
+        }
+
+        #booking-form-container {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: #fff;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        #booking-form {
+            padding: 20px;
+        }
+
+        #close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        #booking-icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="booking-form-container">
+        <div id="booking-form">
+            <span id="close-btn" onclick="closeForm()">&times;</span>
+            <h2>Booking Form</h2>
+            <!-- Add your form fields here -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+
+    <div id="booking-icon" onclick="openForm()">&#9993;</div>
+
+    <script>
+        function openForm() {
+            document.getElementById("booking-form-container").style.right = "0";
+        }
+
+        function closeForm() {
+            document.getElementById("booking-form-container").style.right = "-300px";
+        }
+    </script>
+
+</body>
+</html>
+
+
+</body>
+</html>

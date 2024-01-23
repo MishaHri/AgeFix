@@ -10,59 +10,61 @@
   *{
   margin: 0;
   padding: 0;
-  font-family: Futura;
+  font-family: Futura-Medium,sans-serif;
   box-sizing: border-box;
 }
 
 body{
-  color:white;
   background-color:white;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   border-radius: 12px;
-    height: 150px;
+  /* height: 150px; */
   overflow-y: scroll;
 }
 
-.policy i{
-text-decoration: none;
-font-size: 20px;
-margin-right: 15px;
-color:#655d4b;
-display: inline-block;
-transition: transform 0.5s;
-}
-
-
-.policy i:hover{
-  color:#5b4208;
-  transform: translateY(-5px);
-  }
 
 .policy-text{
-  color:white;
+  color:rgb(44,44,44);
   /* padding: 10px; */
   background-color: #ad8528;
   border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 10px;
 }
+.policy-text p{
+text-align: left;
+}
+
+ul {
+    list-style-type: disc;
+    text-align: left;
+  }
 
 .policy{
   /* padding: 10px; */
   background-color: white;
 opacity: 90%;
+border: white;
+text-decoration: none;
 }
 
-.policy h2{
-  color: #ad8528;
+.policy a{
+  /* padding: 10px; */
+color: rgb(44,44,44);
+text-align: left;
+text-decoration: none;
+font-size:14px ;
 }
 
-.policy-text h3{
-  color: rgb(113, 103, 103);
-}
 
 
 .logo{
   width: 140px;
+}
+
+@media only screen and (max-width:600px){
+
 }
 
 
@@ -71,81 +73,87 @@ opacity: 90%;
 <body>
   <a href="index.html"><img src="images/logotransparency.png" class ='logo'></a>
   <div class ="policy">
-    <!-- <a href="policy.html" result="disallow" onclick="return CloseMySelf(this);"><i class="fa-solid fa-xmark"></a> -->
-    <!-- <a href="index.html"><i class="fa-solid fa-xmark"></a> -->
     <div class = "policy-text">
-      <h2> Dear Customers,</h2>
-      <br>
       <p>
-  Before securing an appointment with Age Fix, we extend our heartfelt gratitude and kindly request a moment to familiarize yourself with our clinic's terms and conditions. <br>These guidelines are meticulously crafted to uphold the highest standards of service while prioritizing the safety and satisfaction of both you and our esteemed clinic.<br> Your agreement to adhere to the terms and conditions outlined below ensures a harmonious and exceptional experience.</p>
-  <br>
-  <h3>
-  AGE FIX TERMS AND CONDITIONS</h3>
-  <br>
-  <p>Contact Information:<br>
-    To facilitate seamless communication, we kindly ask all clients to provide accurate contact details, including address, telephone, and email when securing an appointment.
+      TERMS AND CONDITIONS
 
-  <br>
-  Medical History Form:<br>
-  For your well-being, a comprehensive medical history form is a requisite at your appointment, aiding us in tailoring consultations and treatment plans to your specific needs.
-  <br>Confidentiality:<br>
-  Rest assured, all your information is treated with utmost confidentiality and protected in strict accordance with Data Protection legislation.
-  <br>Mailing List: <br>
-  Should you prefer, clients can effortlessly unsubscribe from our mailing list at any time.
-  <br>Booking Fee:<br>
-  £50 booking fee is graciously requested to secure your treatment appointment, a portion of which is deducted from the total on the day of the procedure. Kindly note that booking fees are non-refundable under any circumstances..  or ? full details card for full protection?
-  <br>Late Arrival Policy:<br>
-  To ensure punctuality and optimal service, we kindly request our valued clients to arrive on time. Clients arriving more than 10 minutes late may be regrettably refused treatment, leading to the forfeiture of the booking fee.
-  <br>Medical Fitness:<br>
-  Clients who may be medically unfit for treatment are kindly advised that we may need to postpone or refrain from providing treatment.
-  <br>Cancellation Policy:<br>
-  A 48-hour cancellation policy is in place. We sincerely appreciate your understanding that failure to provide advance notice results in the forfeiture of the booking fee.
-  <br>Re-scheduling:<br>
-  Recognizing unforeseen circumstances, clients can reschedule appointments up to 7 DAYS before the scheduled date. Kindly note that failure to do so within this period results in the loss of the booking fee.
-  <br>Booking Transfer:<br>
-  Regrettably, bookings and associated fees cannot be transferred to another individual.
-  <br>Children Policy:<br>
-  To maintain a serene environment, children under 18 are not permitted on the premises. We kindly request compliance to avoid any inconvenience or loss of the booking fee.
-  <br>
-  <br>BOOKING FEES ARE NON-REFUNDABLE<br>
-  Payment:<br> To ensure a smooth and efficient experience, full payment is sincerely appreciated at the time of treatment. We accept payments in cash or major debit and credit cards.
-  Refunds: <br>Kindly note that all packages and treatments are non-refundable and non-transferable.
-  Reviews:<br> Your valuable feedback, whether positive or constructive, is genuinely appreciated and can be submitted verbally, via email, or through our clinic website.
-  <br>Client Feedback:<br> Promptly share any concerns or suggestions with us, as we are dedicated to prioritizing your satisfaction and continuously enhancing our services.
+      Contact Information
+      Clients are required to provide accurate contact details, including address, telephone, and email, for appointment booking and communication.
 
-  <br><br>Under No Circumstances Can We Treat:
-  <br>
-  <ul>
-    <li>Individuals under 18 (ID REQUIRED)</li>
-    <li>Those on specific skin medications</li>
-    <li>Those with active cold sores or oral herpes</li>
-    <li>Individuals with various medical conditions (chemotherapy, epilepsy, pregnancy, etc.)</li>
-    <li>Individuals with allergies and certain skin conditions</li>
-    <li>Those with recent use of laser or chemical peeling</li>
-    <li>Individuals with glaucoma or taking blood-thinning medication</li>
-    <li>Diabetics, individuals with high blood pressure, or mitral valve disorders</li>
-  </ul>
-  <p>
-  Thank you for entrusting Age Fix with your beauty and well-being.
-  We eagerly anticipate the privilege of providing you with an exceptional and delightful service.
+      Medical History Form
+      A comprehensive medical history form must be completed during your appointment to personalize treatment plans.
+
+      Consent Forms and Photography
+      Consent forms, including a photograph and use agreement, are required before treatment or at the time of completion.
+
+      Confidentiality
+      We strictly adhere to Data Protection laws, ensuring the confidentiality of your personal information.
+
+      Mailing List
+      Clients may unsubscribe from our mailing list at any time.
+
+      Booking Fee
+      A £50 non-refundable booking fee is required, which will be credited toward your treatment cost.
+
+      Late Arrival Policy
+      Clients over 10 minutes late risk treatment refusal and loss of the booking fee.
+
+      Medical Fitness
+      We reserve the right to postpone or decline treatments for medically unfit clients.
+
+      Cancellation Policy
+      A 48-hour notice is required for cancellations to avoid losing the booking fee.
+
+      Rescheduling
+      Appointments can be rescheduled up to 7 days in advance without losing the booking fee.
+      Booking Transfer: Bookings and fees are non-transferable to other individuals.
+
+      Children Policy
+      Children under 18 are not permitted on the premises.
+
+      Payment
+       Full payment is expected at the time of treatment. Accepted methods include cash and major debit/credit cards, except International Cards.
+
+      Refunds
+      Treatments and packages are non-refundable and non-transferable.
+
+      Reviews and Feedback
+      We value your feedback, which can be shared through various channels for our continuous improvement.
+
+      TREATMENT RESTRICTIONS
+
+      Age Limitation: Individuals under 18 are not eligible for treatment (valid ID required).
+      Skin Medication: Treatment is not advisable for those on certain skin medications.
+      Cold Sores and Oral Herpes: Individuals with active cold sores or oral herpes are not suitable for treatment.
+      Medical Conditions: Those undergoing chemotherapy, experiencing epilepsy, or pregnancy, among other various medical conditions, are advised against treatment.
+      Allergies and Skin Conditions: Individuals with allergies, particularly to anaesthetics like Lidocaine, and certain skin conditions are not candidates for treatment.
+      Recent Procedures: We do not recommend treatment for those who have recently undergone laser or chemical peeling.
+      Glaucoma and Blood-Thinning Medications: Individuals with glaucoma or those taking blood-thinning medication should refrain from treatment.
+      Health Concerns: Diabetics, individuals with high blood pressure, or mitral valve disorders are advised against undergoing treatment.
+      Skin Conditions at Treatment Site: Those with eczema, psoriasis, rashes, blisters, healing disorders, uncontrolled hypertension, or mitral valve disorders at the treatment site are not suitable candidates.
+      Epilepsy: Individuals who have had a seizure in the past two years are advised against treatment.
+      Additional Health Conditions: Treatment is not recommended for individuals who are pregnant, breastfeeding, have cancer, autoimmune diseases, active skin infections, chronic disease exacerbations, hemophilia, or skin inflammation in the treatment area.
+      Keloid Scars: Individuals with a tendency to form keloid scars should not undergo treatment.
+
+      DISCOUNT POLICY
+
+      Non-Transferable Discounts: Discounts are strictly personal and cannot be transferred.
+      Exclusivity of Offers: Offers cannot be combined with other promotions or discounts.
+      Application on Full-Priced Treatments: Discounts apply only to full-priced treatments.
+      Validity and Expiration: Be aware of and adhere to the expiration dates of offers.
+      Reservation of Rights: AgeFix reserves the right to alter or cancel promotions at any time.
+      Usage and Booking: Mention discounts at the time of booking; they cannot be applied retroactively.
+      Consultation and Eligibility: Some offers may require eligibility confirmation or a prior consultation.
+
+      For the latest offers, visit our website at [Insert Website URL]. Our team is available for any inquiries about our discount policy or services.
+      Thank you for choosing AgeFix. We are committed to providing you with exceptional service.
+      Sincerely, AgeFix
   </p>
-  </div>
+  <br>
   <h2>Sincerely,<br>
     AgeFix</h2>
- </div>
-<br>
-<h2>Sincerely,<br>
-AgeFix</h2>
-
-<script>
-  function CloseMySelf(sender) {
-    try {
-        window.opener.HandlePopupResult(sender.getAttribute("result"));
-    }
-    catch (err) {}
-    window.close();
-    return false;
-}
-  </script>
+    <br>
+    <a href="index.html"><i class="fa-solid fa-backward"></i></i>   Back</a>
+  </div>
 </body>
 </html>
