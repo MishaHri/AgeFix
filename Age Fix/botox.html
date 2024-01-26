@@ -193,32 +193,6 @@ padding:10px;
     </style>
 </head>
 <body>
-  <nav>
-    <div class = "logo">
-    <a href="index.html"><img src="images/logotransparency.png" class ='logo'></a>
-    </div>
-    <div class = "menu">
-    <ul id = "sidemenu">
-      <li><a href="#about">About</a></li>
-      <li><a href="#treatments">Treatments</a></li>
-      <li><a href="academy.html">Academy</a></li>
-      <li><div class="dropdown">
-        <button class="dropbtn">F&q</button>
-        <div class="dropdown-content">
-          <a href="policy.html">T&C</a>
-          <a href="cookies.html">Cookies</a>
-        </div>
-      </div>
-
-      <li><a href="#contact">Contact</a></li>
-      <li><a href = "booking.html" class = "btn">Book</a></li>
-      <br>
-      <br>
-      <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-    </ul>
-    <i class="fa-solid fa-bars" onclick ="openmenu()"></i>
-   </div>
-  </nav>
 <div id ="header-botox">
   <div class ="header-text">
     <h2>AgeFix,</h2>
@@ -452,35 +426,6 @@ padding:10px;
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
     }
-</script>
-
-<script>
-function myFunction() {
-    var dropdownFemale = document.getElementById("myDropdown");
-    dropdownFemale.classList.toggle("show");
-}
-
-function myFunctiontwo() {
-    var dropdownMale = document.getElementById("myDropdowntwo");
-    dropdownMale.classList.toggle("showtwo");
-}
-
-// Close the dropdowns if the user clicks outside of them
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn-female')) {
-        var dropdownFemale = document.getElementById("myDropdown");
-        if (dropdownFemale.classList.contains('show')) {
-            dropdownFemale.classList.remove('show');
-        }
-    }
-
-    if (!event.target.matches('.dropbtn-male')) {
-        var dropdownMale = document.getElementById("myDropdowntwo");
-        if (dropdownMale.classList.contains('showtwo')) {
-            dropdownMale.classList.remove('showtwo');
-        }
-    }
-}
 </script>
 
 <script>

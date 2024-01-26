@@ -20,15 +20,16 @@
           <li><a href="#about">About</a></li>
           <li><a href="#treatments">Treatments</a></li>
           <li><a href="academy.html">Academy</a></li>
-          <li><div class="dropdown">
-            <button class="dropbtn">Terms and Condition</button>
+          <li><a href="#blog">Blog</a></li>
+          <!-- <li><div class="dropdown"> -->
+            <!-- <button class="dropbtn">Terms and Condition</button>
             <div class="dropdown-content">
               <a href="policy.html">T&C</a>
               <a href="cookies.html">Cookies</a>
             </div>
-          </div>
-
+          </div> -->
           <li><a href="contactform.html">Contact</a></li>
+          <li><a href="policy.html">Terms and Conditions</a></li>
           <li><a href = "booking.html" class = "btn">Book</a></li>
           <br>
           <br>
@@ -40,10 +41,10 @@
 
   <div id ="header">
                 <div class ="header-text">
-                <h2>WELCOME</h2>
+                <h1>WELCOME</h1>
 <br>
-                     <h3>to AgeFix ....<br> your haven for rejuvenation and timeless beauty. At our aesthetic sanctuary, we blend artistry with expertise to bring you personalized Anti Wrinkle Injections  and Skin Booster treatments. Step into a realm where your natural radiance is our priority. Explore our transformative services designed to enhance your beauty and elevate your confidence. Trust us to unveil your timeless allure.
-                      Welcome to a place where every visit is a journey to the best version of yourself.</h3>
+                     <p>to AgeFix ....your haven for rejuvenation and timeless beauty. At our aesthetic sanctuary, we blend artistry with expertise to bring you personalized Anti Wrinkle Injections  and Skin Booster treatments. Step into a realm where your natural radiance is our priority. Explore our transformative services designed to enhance your beauty and elevate your confidence. Trust us to unveil your timeless allure.
+                      Welcome to a place where every visit is a journey to the best version of yourself.</p>
                       </div>
   </div>
 
@@ -95,6 +96,24 @@
             </div>
     </div>
 
+    <div class="side-button" onclick="openSignupPage()"><i class="fa-solid fa-angles-left"></i></div>
+
+  <!-- Signup page -->
+  <div id="signup-page" class="signup-page">
+    <div class="signup-content">
+      <button onclick="closeSignupPage()"><i class="fa-solid fa-xmark"></i></button>
+      <!-- Your signup form and content go here -->
+      <div class="newsletter-container">
+        <br> <h3>Subscribe to our news letter </h3>
+        <p>and receive 10% discount from your first treatment</p>
+      <form action="#" method="post" class="newsletter-form">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <button type ="submit" class ="btn">Subscribe</button>
+      </form>
+    </div>
+    </div>
+  </div>
+
   <div class = "punchline">
     <h3>Can t decide what treatment is the best for you?<br> <br>Book now a complimentary consutatation</h3>
     <a href = "" class = "btn">Book Now</a>
@@ -117,12 +136,19 @@
                                 <p class = "tab-links" onclick = "opentab('values')">Values</p>
                             </div>
                             <div class = "tab-contents active-tab"  id = "About">
-                           <span><p>I'm Abby to my friends and Gabi to my family, a passionate aesthetician nurse practitioner born in Romania. With a solid background as a certified nurse since 2009, actively practicing in neurology, I've always been fascinated by skin health. This fascination led me to follow my passion and dedicate my entire focus to beauty and the science behind it.
-                            At AgeFix, I've made it my mission to help individuals feel more confident by enhancing their beauty through safe and effective Botox and face booster treatments. My commitment is to provide specialized treatments with expertise and compassion, unlocking and maintaining the timeless beauty within each client.
-                            The name "AgeFix" embodies our core values of fixing and maintaining, aiming to bring out the best version of yourself. Our logo encapsulates our philosophy: "Where time meets beauty."
-                            AgeFix is not just about injectables; we place a strong emphasis on well-being and take a holistic approach to beauty. We believe in nurturing your inner radiance alongside enhancing your external beauty.
-                            AgeFix is dedicated to unleashing your timeless beauty, helping you achieve your desired results while preserving your natural essence. Join us on this transformative journey where we strive to bring out the inherent, ageless beauty within you.<br><br>
-                            Radiantly yours, <br>Gabi Asofiei Founder, <br>AgeFix
+                           <span><p>I am a passionate aesthetic nurse practitioner, with a solid background as a certified nurse.
+                            I've always been fascinated by skin health and this passion led me to follow my dreams and dedicate
+                            my entire focus to beauty and the science behind it.
+                           At AgeFix, I've made it my mission to help individuals feel more confident by
+                           enhancing their beauty through safe and effective anti wrinkles injections and face booster treatments.
+                           <br>My commitment is to provide specialized treatments with expertise and compassion,
+                           unlocking and maintaining the timeless beauty within each client.
+                           The name "AgeFix" embodies our core values of fixing and maintaining, aiming to bring out the best version of yourself.
+                           <br>Our logo encapsulates our philosophy: "Where time meets beauty."
+                           AgeFix is not just about injectables; we place a strong emphasis on well-being and take a holistic approach to beauty. I believe in nurturing your inner radiance alongside enhancing your external beauty.
+                           AgeFix is dedicated to unleashing your timeless beauty, helping you achieve your desired results while preserving your natural essence. Let us lead you on this transformative journey where we strive to bring out the inherent, ageless beauty within you.
+                           <br>
+                           Radiantly yours, Gabi Asofiei Founder, AgeFix. <br>AgeFix
                             </p></span>
                             </div>
                             <div class = "tab-contents" id = "vision">
@@ -192,15 +218,17 @@
                             <img src = "images/sustainable.png">
                             <h2>Sustainable life style</h2>
                             <p>"Every little helps", i believe it should be adopted in every aspect of our life</p>
-                            <a href = "#">Read More</a>
+                            <a href = "bloglast.html">Read More</a>
                       </div>
                 </div>
           </div>
       </div>
+
       <div class = "punchline">
         <h3>Want to hear first about or latest news and offers?
           <br>We got you covered</h3>
         </div>
+
       <div class="newsletter-container">
         <br> <h3>Subscribe to our news letter </h3>
       <form action="#" method="post" class="newsletter-form">
@@ -208,16 +236,17 @@
         <button type ="submit" class ="btn">Subscribe</button>
       </form>
     </div>
+
       <div class = "punchline">
         <h3>If you have any question for us? Do not hesitate to get in touch</h3>
         <a href = "contactform.html" class = "btn">Get in touch</a>
       </div>
+
       <div class="testimonials-container">
         <center>
         <h1 class = "sub-title">Testimonials </h1>
         </center>
         <!-- <marquee behavior="scroll" direction="left" scrollamount="4"> -->
-        <div class="carousel">
           <div class="testimonial">
             <p>"
               Had a microneedling session at Age fix and
@@ -247,9 +276,9 @@
               the treatment to make sure I am happy with the results.
               I highly recommend Gabi, she is the best!"</p>
             <p class="author">Evelyn 15.01.2024</p>
-          </div>
         </div>
       </div>
+
       <div class = "punchline-academy">
         <h2>AgeFix Academy</h2>
         <br>
@@ -299,6 +328,25 @@
   }
 
 </script>
+
+<script>
+
+setTimeout(function() {
+      var sideButton = document.getElementById('sideButton');
+      sideButton.style.display = 'block';
+    }, 20000);
+
+  function openSignupPage() {
+    var signupPage = document.getElementById('signup-page');
+    signupPage.style.display = 'block';
+  }
+
+  function closeSignupPage() {
+    var signupPage = document.getElementById('signup-page');
+    signupPage.style.display = 'none';
+  }
+</script>
+
 
 </body>
 

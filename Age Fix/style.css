@@ -16,62 +16,6 @@ body{
   color:rgb(44,44,44);
 }
 
-#sidebar {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  margin-top: 100;
-  left: -300px;
-  background-color: #333;
-  padding-top: 20px;
-  transition: 0.5s;
-}
-
-#sidebar a {
-  padding: 15px 10px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-#sidebar a:hover {
-  color: #ffc107;
-}
-
-#open-sidebar-btn {
-  font-size: 30px;
-  cursor: pointer;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1;
-}
-
-#booking-form-container {
-  position: fixed;
-  top: 0;
-  right: -300px;
-  width: 300px;
-  height: 100%;
-  background-color: #fff;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-}
-
-#booking-form {
-  padding: 20px;
-}
-
-#close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
-
-
 
 nav{
   display: flex;
@@ -92,9 +36,10 @@ nav{
 
 .menu{
 display: flex;
-justify-content: center;
-padding: 2px;
+justify-content: left;
+padding: 10px;
 }
+
 
 .sticky{
   position: fixed;
@@ -141,55 +86,46 @@ nav ul li a:hover::after{
 }
 
 
-.dropbtn {
+.side-button {
+  /* display: none; */
+  position: fixed;
+  top: 50%;
+  left: 0;
+  background-color:white;
   color:#a67814;
-  /* padding: 10px; */
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  background-color:white ;
-}
-
-
-.dropbtn:hover {
-  color:#5b4208;
-}
-
-/* Style the dropdown content (hidden by default) */
-.dropdown-content {
-  padding-top: 5px;
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Style the links inside the dropdown */
-.dropdown-content a {
-  display: block;
   padding: 10px;
-  text-decoration: none;
-  color: #a67814;
+  cursor: pointer;
+  transform: translateY(-50%);
 }
 
-/* Change color on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
+.side-button:hover {
+padding: 20px;
 }
 
-/* Show the dropdown content when the button is hovered over */
-.dropdown:hover .dropdown-content {
-  display: block;
+/* Style for the signup page */
+.signup-page {
+  display: none;
+  position: fixed;
+  padding: 20px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
 }
 
-
-.container{
-  padding: 10px 10%;
-  justify-content: center;
+.signup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  width: 300px;
   text-align: center;
+  border-radius: 12px;
 }
+
 
 #header {
   width: 100%;
@@ -210,8 +146,8 @@ nav ul li a:hover::after{
 }
 
 
-.header-text h2{
-font-size:30px;
+.header-text h1{
+font-size:80px;
 color: #a67814;
 }
 
@@ -274,6 +210,7 @@ color: #a67814;
 
 .about-col-2{
   flex-basis: 60%;
+  padding: 20px;
 }
 
 .sub-title{
@@ -688,7 +625,7 @@ display: none;
   }
 
   .header-text h1{
-    font-size: 30px;
+    font-size: 60px;
   }
 
   .header-textbooking{
