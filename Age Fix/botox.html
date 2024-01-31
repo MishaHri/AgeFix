@@ -8,43 +8,41 @@
   <title>Document</title>
   <style>
 
-html{
-  scroll-behavior: smooth;
-}
 
-
-#header-botox{
-  width: 100%;
-  height: 100vh;
-  margin-top: 100px;
-  background: url(images/botox.jpg)repeat center center fixed;
-  background-size: cover;
-}
+.header-text {
+      position: absolute;
+      top: 70%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      z-index: 2; /* Set a higher z-index to appear over the header */
+    }
 
 
 #tretment-sumary{
   padding: 20px;
-  background-color: #ad8528;
-  color:white;
+  background-color: white;
+  color:#ad8528;
   text-align: center;
   border-radius: 12px;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 10px;
+  margin-bottom: 10px;
+  border:solid 1px #ad8528;
 }
 
 
 
 .column-tretment{
 border-radius: 10px;
-border:3px solid white;
+border:3px solid #ad8528;
 padding:30px;
 }
 
 
 .benefits ul{
   display: inline-block;
-  color: white;
+  color: #ad8528;
 }
 
 
@@ -55,126 +53,155 @@ padding:30px;
 }
 
 .booknow{
-color: antiquewhite;
+color: #ad8528;
 text-align: center;
-margin-top: 5px;
+margin-top: 10px;
+margin-bottom: 10px;
 }
 
 .booknow a{
-color: antiquewhite;
+color: #ad8528;
 text-decoration: none;
 }
 
-.booknow:hover{
+.booknow a:hover{
   transform: scale(1.1);
 }
+.dropdown-container {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
 
-.dropdownmenu{
-  padding: 20px;
-  display: flex;
-justify-content: center;
-}
-/* Dropdown Button */
-.dropbtn {
-  background-color: white;
-  color:#ad8528;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 12px;
-  border:2px solid #ad8528;
-}
+    }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #7f6018;
-  color: white;
-}
+    .dropdown {
+      position: relative;
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: center;
+      /* border: 1px solid grey; */
+      border-radius: 40px;
+    }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+    }
 
+    .dropdown:hover .dropdown-content {
+      display: block;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 0px;
+    }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  text-align: center;
-  border-radius: 12px;
-  padding: 20px;
-}
+    .dropdown-item {
+      cursor: pointer;
+      margin-top: 0px;
+      padding: 5px;
+      background-color: white;
+    }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+.container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
-.dropdowntwo {
-  position: relative;
-  display: inline-block;
-  margin-left: 10px;
+    .row {
+  margin-left:-5px;
+  margin-right:-5px;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-contenttwo {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 12px;
+.column {
+  float: center;
+  width: 50%;
+  padding: 10px;
 }
 
-.dropdown-contenttwo p{
-color: #ad8528;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-/* Links inside the dropdown */
-.dropdown-contenttwo a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+    .table-container {
+      margin: 40px;
+      object-fit: center;
+    }
 
-/* Change color of dropdown links on hover */
-.dropdown-contenttwo a:hover {background-color: #ddd;}
+    .table-container  h2{
+     object-fit: center;
+      color: #a67814;
+      padding: 20px;
+      margin-bottom: 10px;
+      border-bottom:  2px solid #a67814;
+      font-size: 30px;
+    }
 
-.showtwo {display:block;}
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      border: 1px solid  #ad8528;
+    }
+
+    th, td {
+      padding: 30px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    th {
+      background-color: #AD8527;
+      color:  white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #E8D29F;
+      color:  #ad8528;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #F3E8CF;
+      color: #AD8527;;
+    }
 
 .tretment-box{
   padding: 10px;
 }
 
 
+select {
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    .priceinfo{
+      text-align:center;
+    }
+
 @media only screen and (max-width:600px){
 
-  #header-botox{
-  width: 100%;
-  height: 100vh;
-  background: url(images/man\ \ face.png)no-repeat center center fixed;
-  background-size: cover;
-}
+  .header-text{
+    width: 30%;
+    background-color:transparent;
+    top: 50%;
+    left: 20%;
+  }
 
-
+  .header-text h1{
+    font-size: 30px;
+    color: #a67814;
+    margin-right: 0px;
+  }
 
 .column-tretment{
 padding:10px;
@@ -188,22 +215,32 @@ padding:10px;
     padding: 10px;
   }
 
+  .table-container  h2{
+margin-left: 10px;
+      font-size: 25px;
+    }
+
+    .column {
+  float: center;
+  width: 100%;
+}
+
 }
 
     </style>
 </head>
 <body>
-<div id ="header-botox">
+<div id ="header">
+  <img src ="images/botoxheader.png">
   <div class ="header-text">
-    <h2>AgeFix,</h2>
-  <h3>Botox heaven.</h3>
-  <p>Your premier
-   destination for Botox treatments in London. </p>
+    <h1>AgeFix</h1>
+  <h1>Botox</h1>
 </div>
 </div>
 
 <div class = "punchline">
-  <h3>Non-surgical procedure enhancing facial aesthetics
+  <h3>Your premier
+    destination for Botox treatments in London.<br>Non-surgical procedure enhancing facial aesthetics
     by relaxing muscles, reducing wrinkles, and promoting a smoother,
     youthful appearance.
   </h3>
@@ -213,10 +250,12 @@ padding:10px;
   <div id ="tretment-sumary">
   <h2>Tretment Sumary</h2>
   <br>
+  <br>
   <div class ="treatment">
 <div class = "row">
   <div class = "column-tretment">
     <p>Application</p>
+    <br>
     <i class="fas fa-syringe"></i>
   </div>
   <div class = "column-tretment">
@@ -251,205 +290,215 @@ padding:10px;
 </div>
 </div>
 
- </div>
+<div class = "punchline">
+  <h3>Don t know what to expect?
+    <br> See bellow if you find answers to your questions
+    <br>If not, please do not sesitate to get in touch
+  </h3>
+  <a href = "contactform.html" class ="btn">Get in touch</a>
 
- <div class="dropdownmenu">
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn dropbtn-female">Female services: starting from 160£ <i class="fa-solid fa-caret-down"></i></button>
-    <div id="myDropdown" class="dropdown-content">
-    <a href="#">1st visit .............£130</a>
-    <a href="#">2nd visit .............£280</a>
-    <a href="#">3rd visit .............Free</a>
-    <a href="#">crows feet - bunny lines or lip flip</a>
-    <a href = "booking.html" class = "btn">Book</a>
-    <p>*Prices subject to change due to quantity of serum used</p>
-    <p>*See Terms& conditions for more details</p>
-  </div>
-</div>
-<div class="dropdowntwo">
-  <button onclick="myFunctiontwo()" class="dropbtn dropbtn-male">Male services: starting from 169£<i class="fa-solid fa-caret-down"></i>
-  <div id="myDropdowntwo" class="dropdown-contenttwo">
-    <a href="#">1st visit .............£160</a>
-    <a href="#">2nd visit .............£280</a>
-    <a href="#">3rd visit .............Free</a>
-    <a href="#">crows feet - bunny lines or lip flip</a>
-    <a href = "booking.html" class = "btn">Book</a>
-    <p>*Prices subject to change due to quantity of serum used</p>
-    <p>*See Company Policy for booking details</p>
-  </div>
-</div>
 </div>
 
-<div id = "about">
-      <div class= "container">
-            <div class = "row">
-                    <div class=" about-col-1">
-                      <img src = "images/24.png">
-                    </div>
-                    <div class="about-col-2">
-                          <div class = "tab-titles">
-                              <p class= "tab-links active-link" onclick = "opentab('About')">What Botox is?</p>
-                              <p class = "tab-links" onclick = "opentab('mission')">How does it work</p>
-                              <p class = "tab-links" onclick = "opentab('clinic')">Is Botox safe?</p>
-                          </div>
-                          <div class = "tab-contents active-tab"  id = "About">
-                            <div class = "move-button">
-                         <span><p>Botulinum toxin A (Botox A) stands out as a remarkably potent neurotoxin originating from the bacterium Clostridium botulinum. This toxin comprises two main components: a heavy chain and a light chain. The heavy chain plays a pivotal role in facilitating the toxin's entry into the presynaptic terminal, a key area in nerve cells. Once inside, the light chain of Botox A exhibits its efficacy by specifically cleaving SNAP-25, a protein critical in the process of synaptic vesicle exocytosis.
-                          In simpler terms, Botox A interferes with the normal functioning of nerve cells by preventing the release of neurotransmitters. This occurs through the cleaving of SNAP-25, a protein essential for the release of these signaling molecules. By disrupting this process, Botox A effectively blocks the communication between nerves and muscles, leading to the temporary relaxation of targeted muscles. This property makes Botox A a widely used and successful treatment in various medical and cosmetic applications, offering solutions for conditions such as muscle spasms, migraines, and the reduction of facial wrinkles.
-                          Botox A, derived from the bacterium Clostridium botulinum, is a highly effective and widely recognized neurotoxin. Let's break down what this means for you:
-                          <br>
-                          How It Works: <br>
-                          Botox A consists of two important components – a heavy chain and a light chain. The heavy chain acts as a guide, allowing the toxin to enter nerve cells, specifically the presynaptic terminal. Once inside, the light chain takes action by cleaving SNAP-25, a crucial protein involved in the release of neurotransmitters.
-                          <br><br>What It Does: <br>In simpler terms, Botox A disrupts the normal communication between nerves and muscles. By targeting and cleaving SNAP-25, it temporarily prevents the release of neurotransmitters. This interruption results in the temporary relaxation of specific muscles, making Botox A a highly sought-after solution for addressing various concerns.
-                          <br><br>Applications: <br>Botox A is not just a cosmetic treatment; it has diverse applications. In the medical realm, it is used to treat conditions such as muscle spasms and migraines. In the cosmetic field, it is renowned for its ability to reduce the appearance of facial wrinkles.
-                          <br><br>What to Expect: <br>When administered by a qualified professional, Botox A can help you achieve a smoother and more relaxed appearance by targeting and softening specific facial muscles. It's a non-invasive and temporary solution, allowing you to enjoy the benefits without the need for surgery.
-                          <br><br>Safety:<br> Safety is a priority. Botox A has a long track record of use in both medical and cosmetic settings. It is essential to receive treatments from trained and experienced professionals to ensure proper administration and optimal results.
-                          <br><br>In summary, Botox A is a powerful tool in addressing various concerns, offering a safe and effective way to temporarily enhance your natural beauty by relaxing specific muscles. If you're considering Botox A treatments, consult with our skilled team to discuss your goals and determine the best approach for you.
-                          </p></span>
-                          </div>
-                          </div>
-                          <div class = "tab-contents" id = "clinic">
-                            <span><p>Absolutely.
-                              <br>Botox is FDA-approved for reversing lines and wrinkles. However, individuals who are pregnant, breastfeeding, or have specific neurological diseases should avoid Botox treatments.
-                              <br><br>Preparing for Treatment:<br> A week before your Botox treatment, it's advisable to abstain from alcohol and avoid blood-thinning medications or supplements to minimize the risk of bruising.
-                              <br><br>Potential Side Effects: <br>Side effects may include temporary bruising, swelling, redness, or tenderness around the injection site, which typically resolve within a few days to a week.
-                              <br><br>At AgeFix, we prioritize your comfort and safety, offering expert Botox treatments tailored to your unique needs. Join us on your journey to rediscover and celebrate your timeless beauty!</p></span>
-                           </p></span>
-                          </div>
-                          <div class = "tab-contents" id = "mission">
-                            <span><p>
-                              <br><br>How Does Botox Work? <br>
-                              Botox, a neuromodulator (a form of botulinum toxin type A), is administered with a fine needle into targeted areas. It blocks nerve signals necessary for facial muscles to contract, addressing the repetitive muscle movements that lead to lines and wrinkles. The result is a gradual reduction in the appearance of lines or wrinkles over 3-7 days following the injection.
-                              <br><br> What Areas of the Face Can Be Treated with Botox?
-                              <br>Botox is versatile and can effectively address lines and wrinkles on various facial areas, including the forehead, eye area (crow’s feet), lip lines, and even chin dimpling. It can also be used to alleviate pain from teeth grinding or TMJ and achieve a jaw-slimming effect.
-                              <br><br>What Does a Botox Treatment Feel Like?
-                              <br>Botox treatments are quick and involve minimal discomfort. No anesthesia or recovery time is needed, allowing many individuals to return to their normal activities immediately after the appointment.
-                              <br><br>Is Botox Painful? <br>The procedure is generally not considered painful. Most patients report a brief period of discomfort during the injection, which quickly subsides once the procedure is complete.
-                              <br><br>How Soon Will I See Results?<br> Results typically become noticeable within 3-5 days, with the full effects appearing within 2 weeks for some patients.
-                              <br><br>How Long Does Botox Last? <br>Botox results typically last between 3-5 months. Periodic maintenance treatments every 3-4 months can help extend these results.
-                              <br><br>When Should I Start Getting Botox?<br> There's no specific age requirement for Botox. Many individuals in their twenties are proactively using Botox to address early signs of lines and wrinkles or as a preventative measure. A consultation with a medical professional is recommended to determine the most suitable approach.</p></span>
-                          </div>
-                    </div>
-            </div>
-       </div>
+ <div class="dropdown-container">
+  <div class="dropdown" id="dropdown1">
+    <div class="dropdown-item"><h2>Pre-Treatment for Anti-Wrinkle Injections:<i class="fa-solid fa-angles-down"></i></h2></div>
+    <div class="dropdown-content">
+      <h3>How to prepare for your treatment to get the best results</h3>
+      <br>
+      <div><ul>
+        <li>Avoid using topical products that contain tretinoin, retinol, retinoids, glycolic acid, or any "anti-aging" products.</li>
+        <li>Refrain from consuming alcohol or coffee 24 hours prior to the treatment.</li>
+        <li>Arrive for your appointment makeup-free, if possible, to facilitate a clean and efficient treatment process.</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <div class="dropdown" id="dropdown2">
+    <div class="dropdown-item"><h2>Pre-Treatment for Anti-Wrinkle Injections:<i class="fa-solid fa-angles-down"></i></h2></div>
+    <div class="dropdown-content">
+      <h3>How to prepare for your treatment to get the best results</h3>
+      <br>
+      <div><ul>
+        <li>Avoid using topical products that contain tretinoin, retinol, retinoids, glycolic acid, or any "anti-aging" products.</li>
+        <li>Refrain from consuming alcohol or coffee 24 hours prior to the treatment.</li>
+        <li>Arrive for your appointment makeup-free, if possible, to facilitate a clean and efficient treatment process.</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <div class="dropdown" id="dropdown3">
+    <div class="dropdown-item"><h2>Pre-Treatment for Anti-Wrinkle Injections:<i class="fa-solid fa-angles-down"></i></h2></div>
+    <div class="dropdown-content">
+      <p>How to prepare for your treatment to get the best results</p>
+      <div><ul>
+        <li>Avoid using topical products that contain tretinoin, retinol, retinoids, glycolic acid, or any "anti-aging" products.</li>
+        <li>Refrain from consuming alcohol or coffee 24 hours prior to the treatment.</li>
+        <li>Arrive for your appointment makeup-free, if possible, to facilitate a clean and efficient treatment process.</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <div class="dropdown" id="dropdown4">
+    <div class="dropdown-item"><h2>Pre-Treatment for Anti-Wrinkle Injections:<i class="fa-solid fa-angles-down"></i></h2></div>
+    <div class="dropdown-content">
+      <p>How to prepare for your treatment to get the best results</p>
+      <div><ul>
+        <li>Avoid using topical products that contain tretinoin, retinol, retinoids, glycolic acid, or any "anti-aging" products.</li>
+        <li>Refrain from consuming alcohol or coffee 24 hours prior to the treatment.</li>
+        <li>Arrive for your appointment makeup-free, if possible, to facilitate a clean and efficient treatment process.</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <div class="dropdown" id="dropdown5">
+    <div class="dropdown-item"><h2>Pre-Treatment for Anti-Wrinkle Injections:<i class="fa-solid fa-angles-down"></i></h2></div>
+    <div class="dropdown-content">
+      <p>How to prepare for your treatment to get the best results</p>
+      <div><ul>
+        <li>Avoid using topical products that contain tretinoin, retinol, retinoids, glycolic acid, or any "anti-aging" products.</li>
+        <li>Refrain from consuming alcohol or coffee 24 hours prior to the treatment.</li>
+        <li>Arrive for your appointment makeup-free, if possible, to facilitate a clean and efficient treatment process.</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <div class="dropdown" id="dropdown6">
+    <div class="dropdown-item"><h2>Pre-Treatment for Anti-Wrinkle Injections:<i class="fa-solid fa-angles-down"></i></h2></div>
+    <div class="dropdown-content">
+      <p>How to prepare for your treatment to get the best results</p>
+      <div><ul>
+        <li>Avoid using topical products that contain tretinoin, retinol, retinoids, glycolic acid, or any "anti-aging" products.</li>
+        <li>Refrain from consuming alcohol or coffee 24 hours prior to the treatment.</li>
+        <li>Arrive for your appointment makeup-free, if possible, to facilitate a clean and efficient treatment process.</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+
 </div>
 
 <div class = "punchline">
-  <h3>How to prepare for the tretment?</h3>
-  <br>
-  <p>Read bellow AgeFix advice</p>
+  <h2>AgeFix price range</h2>
 </div>
 
-<div id = "about">
-  <div class= "container">
-        <div class = "row">
-                <div class="about-col-2">
-                      <div class = "tab-titles">
-                          <p class= "tab-links active-link" onclick = "opentab('About')">Before</p>
-                          <p class = "tab-links" onclick = "opentab('after')">After</p>
-                          <p class = "tab-links" onclick = "opentab('results')">Results</p>
-                      </div>
-                      <div class = "tab-contents active-tab"  id = "Before">
-                        <div class = "move-button">
-                     <span><p>Botulinum toxin A (Botox A) stands out as a remarkably potent neurotoxin originating from the bacterium Clostridium botulinum. This toxin comprises two main components: a heavy chain and a light chain. The heavy chain plays a pivotal role in facilitating the toxin's entry into the presynaptic terminal, a key area in nerve cells. Once inside, the light chain of Botox A exhibits its efficacy by specifically cleaving SNAP-25, a protein critical in the process of synaptic vesicle exocytosis.
-                      In simpler terms, Botox A interferes with the normal functioning of nerve cells by preventing the release of neurotransmitters. This occurs through the cleaving of SNAP-25, a protein essential for the release of these signaling molecules. By disrupting this process, Botox A effectively blocks the communication between nerves and muscles, leading to the temporary relaxation of targeted muscles. This property makes Botox A a widely used and successful treatment in various medical and cosmetic applications, offering solutions for conditions such as muscle spasms, migraines, and the reduction of facial wrinkles.
-                      Botox A, derived from the bacterium Clostridium botulinum, is a highly effective and widely recognized neurotoxin. Let's break down what this means for you:
-                      <br>
-                      How It Works: <br>
-                      Botox A consists of two important components – a heavy chain and a light chain. The heavy chain acts as a guide, allowing the toxin to enter nerve cells, specifically the presynaptic terminal. Once inside, the light chain takes action by cleaving SNAP-25, a crucial protein involved in the release of neurotransmitters.
-                      <br><br>What It Does: <br>In simpler terms, Botox A disrupts the normal communication between nerves and muscles. By targeting and cleaving SNAP-25, it temporarily prevents the release of neurotransmitters. This interruption results in the temporary relaxation of specific muscles, making Botox A a highly sought-after solution for addressing various concerns.
-                      <br><br>Applications: <br>Botox A is not just a cosmetic treatment; it has diverse applications. In the medical realm, it is used to treat conditions such as muscle spasms and migraines. In the cosmetic field, it is renowned for its ability to reduce the appearance of facial wrinkles.
-                      <br><br>What to Expect: <br>When administered by a qualified professional, Botox A can help you achieve a smoother and more relaxed appearance by targeting and softening specific facial muscles. It's a non-invasive and temporary solution, allowing you to enjoy the benefits without the need for surgery.
-                      <br><br>Safety:<br> Safety is a priority. Botox A has a long track record of use in both medical and cosmetic settings. It is essential to receive treatments from trained and experienced professionals to ensure proper administration and optimal results.
-                      <br><br>In summary, Botox A is a powerful tool in addressing various concerns, offering a safe and effective way to temporarily enhance your natural beauty by relaxing specific muscles. If you're considering Botox A treatments, consult with our skilled team to discuss your goals and determine the best approach for you.
-                      </p></span>
-                      </div>
-                      </div>
-                      <div class = "tab-contents" id = "after">
-                        <span><p>Absolutely.
-                          <br>Botox is FDA-approved for reversing lines and wrinkles. However, individuals who are pregnant, breastfeeding, or have specific neurological diseases should avoid Botox treatments.
-                          <br><br>Preparing for Treatment:<br> A week before your Botox treatment, it's advisable to abstain from alcohol and avoid blood-thinning medications or supplements to minimize the risk of bruising.
-                          <br><br>Potential Side Effects: <br>Side effects may include temporary bruising, swelling, redness, or tenderness around the injection site, which typically resolve within a few days to a week.
-                          <br><br>At AgeFix, we prioritize your comfort and safety, offering expert Botox treatments tailored to your unique needs. Join us on your journey to rediscover and celebrate your timeless beauty!</p></span>
-                       </p></span>
-                      </div>
-                      <div class = "tab-contents" id = "results">
-                        <span><p>
-                          <br><br>How Does Botox Work? <br>
-                          Botox, a neuromodulator (a form of botulinum toxin type A), is administered with a fine needle into targeted areas. It blocks nerve signals necessary for facial muscles to contract, addressing the repetitive muscle movements that lead to lines and wrinkles. The result is a gradual reduction in the appearance of lines or wrinkles over 3-7 days following the injection.
-                          <br><br> What Areas of the Face Can Be Treated with Botox?
-                          <br>Botox is versatile and can effectively address lines and wrinkles on various facial areas, including the forehead, eye area (crow’s feet), lip lines, and even chin dimpling. It can also be used to alleviate pain from teeth grinding or TMJ and achieve a jaw-slimming effect.
-                          <br><br>What Does a Botox Treatment Feel Like?
-                          <br>Botox treatments are quick and involve minimal discomfort. No anesthesia or recovery time is needed, allowing many individuals to return to their normal activities immediately after the appointment.
-                          <br><br>Is Botox Painful? <br>The procedure is generally not considered painful. Most patients report a brief period of discomfort during the injection, which quickly subsides once the procedure is complete.
-                          <br><br>How Soon Will I See Results?<br> Results typically become noticeable within 3-5 days, with the full effects appearing within 2 weeks for some patients.
-                          <br><br>How Long Does Botox Last? <br>Botox results typically last between 3-5 months. Periodic maintenance treatments every 3-4 months can help extend these results.
-                          <br><br>When Should I Start Getting Botox?<br> There's no specific age requirement for Botox. Many individuals in their twenties are proactively using Botox to address early signs of lines and wrinkles or as a preventative measure. A consultation with a medical professional is recommended to determine the most suitable approach.</p></span>
-                      </div>
-                </div>
-                <div class=" about-col-1">
-                  <img src = "images/botoxprepare.png">
-                </div>
-        </div>
-   </div>
+
+<div class="container">
+<div class="row">
+  <div class="column">
+  <div class="table-container">
+    <h2>Female</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Area</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Consultation</td>
+          <td>Free*</td>
+        </tr>
+        <tr>
+          <td>1 Area</td>
+          <td>160£</td>
+        </tr>
+        <tr>
+          <td>2 Areas</td>
+          <td>180£</td>
+        </tr>
+        <tr>
+          <td>3 Areas</td>
+          <td>200£</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+  <div class="column">
+
+  <div class="table-container">
+    <h2>Male</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Area</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Consultation</td>
+          <td>Free*</td>
+        </tr>
+        <tr>
+          <td>1 Area</td>
+          <td>180£</td>
+        </tr>
+        <tr>
+          <td>2 Areas</td>
+          <td>160£</td>
+        </tr>
+        <tr>
+          <td>3 Areas</td>
+          <td>200£</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+</div>
+</div>
+
+
+<div class ="priceinfo">
+<p>Prices subject to change due to quantity of serum used</p>
+<p>*See Terms & conditions for more details</p>
 </div>
 
 <div class = "booknow">
-  <a href = "booking.html">Book now a complimentary consultation</a>
+  <h3>Book now a complimentary consultation<h3>
+  <div class = "btn"><a href = "booking.html">Book now</a>
 </div>
 
-  <iframe src="footer.html" width="100%" height="1200" frameborder="0" scrolling="no"></iframe>
-<script>
-  window.onscroll =function(){myFunction()};
-  var navbar = document.getElementsByClassName("nav");
-  var sticky =navbar.offsetTop;
-  function myFunction(){
-    if (window.pageYOffset >= sticky){
-      navbar.classList.add("sticky")
-    }else{
-      navbar.classList.remove("sticky")
-    }
-  }
-
-</script>
 
 <script>
-  var tablinks=document.getElementsByClassName("tab-links");
-  var tabcontents=document.getElementsByClassName("tab-contents");
-  function opentab(tabname) {
-    for(tablink of tablinks){
-      tablink.classList.remove("active-link");
+  document.addEventListener('click', function (event) {
+    // Close all dropdowns if clicked outside
+    if (!event.target.closest('.dropdown')) {
+      document.querySelectorAll('.dropdown-content').forEach(function (dropdownContent) {
+        dropdownContent.style.display = 'none';
+      });
     }
-    for(tabcontent of tabcontents){
-      tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
+  });
 
-<script>
-var sidemenu = document.getElementById("sidemenu");
-function openmenu (){
-  sidemenu.style.right ="0";
-}
-function closemenu (){
-  sidemenu.style.right ="-200px";
-}
-
-</script>
-  <script>
-    window.onscroll =function(){myFunction()};
-    var navbar = document.getElementsByClassName("nav");
-    var sticky =navbar.offsetTop;
-    function myFunction(){
-      if (window.pageYOffset >= sticky){
-        navbar.classList.add("sticky")
-      }else{
-        navbar.classList.remove("sticky")
+  document.querySelectorAll('.dropdown').forEach(function (dropdown) {
+    dropdown.addEventListener('mouseenter', function () {
+      // Adjust the position of the next dropdown
+      const nextDropdown = this.nextElementSibling;
+      if (nextDropdown) {
+        nextDropdown.style.marginTop = this.offsetHeight + 'px';
       }
-    }
+    });
 
-  </script>
+    dropdown.addEventListener('mouseleave', function () {
+      // Reset the position of the next dropdown
+      const nextDropdown = this.nextElementSibling;
+      if (nextDropdown) {
+        nextDropdown.style.marginTop = '0';
+      }
+    });
+  });
+</script>
+
+        <iframe  id = "footershow"src="footer.html" width="100%" frameborder="0" scrolling="no"></iframe>
 </body>
 </html>

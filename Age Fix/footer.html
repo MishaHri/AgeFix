@@ -7,209 +7,146 @@
   <script src="https://kit.fontawesome.com/1f6873ff8c.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href ="style.css">
   <style>
+    #footer {
+      background: rgb(44, 44, 44);
+      padding: 10px 0;
+      position: relative;
+      margin-bottom: 0;
+      width: 100%;
+      color: white;
+      text-align: center;
+    }
 
-  #footer{
-  background:rgb(44,44,44);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  position: relative;
-  margin-bottom: 0;
-  width: 100%;
-  color:white;
-  text-align: center;
-  padding-top: 10px;
-}
-.h2 {
-  color:#ad8528;
-  font-weight: 20px;
-  font-size: 10px;
-}
+    .h2 {
+      color: #ad8528;
+      font-weight: 20px;
+      font-size: 10px;
+    }
 
-.h3 {
-  font-weight: 50px;
-}
+    .h3 {
+      font-weight: 50px;
+    }
 
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-.contact-left{
-  float: left;
-  width: 50%;
-  justify-content: center;
-  padding: 10px;
-}
+    .contact-left,
+    .contact-right {
+      width: 50%;
+    }
 
+    .contact-left {
+      float: left;
+      justify-content: center;
+      padding: 10px;
+    }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    .contact-right {
+      margin-top: 10%;
+      justify-content: center;
+    }
 
-#footer a {
-  text-decoration: none;
-  color:white;
-}
+    .contact-right p i {
+      color: white;
+      margin-right: 15px;
+      font-size: 20px;
+      justify-content: center;
+    }
 
-#footer a:hover {
-  text-decoration: none;
-  color:#ad8528;
-  transform: translateY(-5px);
-}
+    .social-icons {
+      margin-bottom: 5%;
+      margin-right: 0;
+      padding: 5px;
+    }
 
-.contact-right{
-  margin-top:10%;
-  justify-content: center;
-}
+    .social-icons a {
+      text-decoration: none;
+      font-size: 20px;
+      margin-left: 10px;
+      color: #ad8528;
+      display: inline-block;
+      transition: transform 0.5s;
+    }
 
-.contact-right p i{
-  color:white;
-  margin-right: 15px;
-  font-size: 20px;
-  justify-content: center;
-}
+    #footer a:hover {
+      text-decoration: none;
+      color: #ad8528;
+      transform: translateY(-5px);
+    }
 
-.social-icons{
-  margin-bottom:5% ;
-  margin: right 0px;
-  padding: 5px;
-}
+    .policy a{
+      text-decoration: none;
+color: white;
+margin-top: 50px;
+margin-bottom: 0%;
+    }
 
-.social-icons a{
-text-decoration: none;
-font-size: 20px;
-margin-left: 10px;
-color:#ad8528;
-display: inline-block;
-transition: transform 0.5s;
-}
+    .sub-footerbig{
+      background-color: black;
+      font-size: 15px;
+      text-align: center;
+    }
 
-  .policy li{
-
-color:#ad8528;
-/* display: inline-block; */
-transition: transform 0.5s;
-/* float: right; */
-text-align: center;
-margin-left: 5px;
-padding-top: 40px;
-}
-
-.policy li:hover{
-  transform: translateY(-5px);
-  color: white;
-  }
-
-  .policy li a:hover{
-  transform: translateY(-5px);
-  color: white;
-  }
-
-.sub-footerbig{
-  background-color: black;
-  font-size: 15px;
-}
-
-.sub-footerbig p{
-  color:#ad8528;
-}
-
-.sub-footersmall{
-  display: none;
-}
-
-@media only screen and (max-width:600px){
-
-  #footer {
-     font-size: 14px;
-   }
-
-.contact-left{
-   float: none;
-   width: 100%;
-   text-align: center;
-
-}
-
-.contact-right{
-text-align: center;
-width: 100%;
-}
-
-.policy a{
-color:#ad8528;
-text-align: center;
-transition: transform 0.5s;
-padding-bottom: 20px;
-}
+    .sub-footerbig p {
+      color: #ad8528;
+    }
 
 
-.sub-footerbig{
-  display: none;
-}
+    @media only screen and (max-width: 600px) {
+      #footer {
+        font-size: 14px;
+      }
 
-.sub-footersmall{
-  display: contents;
-}
+      .contact-left,
+      .contact-right {
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
 
-.social-icons{
-object-fit: contain;
-}
+      .social-icons {
+        object-fit: contain;
+      }
 
-.social-icons a{
-margin-bottom: 0px;
-margin-left: 10px;
-}
-
-}
+      .social-icons a {
+        margin-bottom: 0;
+        margin-left: 10px;
+      }
+    }
   </style>
 </head>
-<body>
-<div id = "footer">
-          <h2>Agefix, by appointment only</h2>
-          <div class = "row">
-                <div class ="contact-left">
-                  <p>Adress:<br>  260 (3A) - 3rd Floor Pentoville Road, Kings Cross, London, N1 9JY</p><br>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19858.623112468686!2d-0.12894220019363656!3d51.525545604505965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b41287b4d07%3A0xc1a5f6720c59ffc4!2sPentonville%20Rd%2C%20London!5e0!3m2!1sen!2suk!4v1706030333804!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-                  <div class = "contact-right">
-                    <h3>Contact:</h3>
-                      <p><i class="fa-regular fa-paper-plane"></i>info@agefixlondon.com</p>
-                      <p><i class="fa-solid fa-square-phone"></i>07895 169 699</p>
-                    <div class="social-icons">
-                      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                   </div>
 
-                </div>
-          </div>
-          <div class = "sub-footerbig">
-          <div class = "row">
-                            <div class = "column-left">
-                            <img src="images/logotransparency.png" class="logo">
-                             <p>@Agefix, all rights reserved</p>
-                            </div>
-                            <div class = "policy">
-                              <a href = "policy.html">Termes & conditions</a>
-                              <!-- <a href = "policy.html">Privacy Policy</a>
-                              <a href = "policy.html">Cookies Policy</a> -->
-                              </ul>
-                          </div>
-          </div>
-          </div>
-          <div class = "sub-footersmall">
-            <div class = "row">
-                              <div class = "policy">
-                                <ul>
-                                <li><a href = "policy.html">Termes & conditions</a></li>
-                                  <!-- <li>Privacy Policy</li>
-                                  <li><a href = "cookies.html">Cookies Policy</a></li> -->
-                                </ul>
-                            </div>
-                            <div class = "column-left">
-                              <img src="images/logotransparency.png" class="logo">
-                               <p>@Agefix, all rights reserved</p>
-                              </div>
-            </div>
-          </div>
-</div>
+<body>
+  <div id="footer">
+    <h2>Agefix, by appointment only</h2>
+    <div class="row">
+      <div class="contact-left">
+        <p>Adress:<br> 260 (3A) - 3rd Floor Pentoville Road, Kings Cross, London, N1 9JY</p><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19858.623112468686!2d-0.12894220019363656!3d51.525545604505965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b41287b4d07%3A0xc1a5f6720c59ffc4!2sPentonville%20Rd%2C%20London!5e0!3m2!1sen!2suk!4v1706030333804!5m2!1sen!2suk"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="contact-right">
+        <h3>Contact:</h3>
+        <p><i class="fa-regular fa-paper-plane"></i>info@agefixlondon.com</p>
+        <p><i class="fa-solid fa-square-phone"></i>07895 169 699</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="policy">
+          <a href="policy.html">Termes & conditions</a>
+        </div>
+      </div>
+    </div>
+    <div class="sub-footerbig">
+          <img src="images/logotransparency.png" class="logo">
+          <p>@Agefix, all rights reserved</p>
+    </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

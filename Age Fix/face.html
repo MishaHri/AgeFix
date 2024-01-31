@@ -11,40 +11,14 @@
     <link href="https://fonts.cdnfonts.com/css/futura-medium" rel="stylesheet">
     <style>
 
-* {
-            margin: 0;
-            padding: 0;
-            font-family: Futura-Medium, sans-serif;
-            box-sizing: border-box;
-        }
+body{
+  background-color:white;
+  color:rgb(44,44,44);
+}
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            color: black;
-            background-color: white;
-            padding: 10px;
-        }
-
-        .header {
-            text-align: center;
-            background: url(images/facebackground.png) no-repeat center center fixed;
-            width: 100%;
-            height: 80VH;
-            background-size: cover;
-            color: rgb(44, 44, 44);
-        }
-
-        .header-text {
-            text-align: center;
-            padding: 10px;
-            color: black;
-            background-color: white;
-            opacity: 70%;
-            margin-bottom: 30%;
-        }
+html{
+  scroll-behavior: smooth;
+}
 
         .row {
             display: flex;
@@ -54,6 +28,24 @@
             clear: both;
             overflow: hidden;
         }
+
+        .header{
+      position: relative;
+      width: 100%;
+      /* height: 300px; Adjust the height as needed */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1; /* Ensure a proper z-index */
+    }
+
+    .header-text {
+      position: absolute;
+      top: 70%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      z-index: 2; /* Set a higher z-index to appear over the header */
+    }
 
         .column {
             box-sizing: border-box;
@@ -88,10 +80,9 @@
         }
 
         .column img {
-            width: 100%;
+            width: 50%;
             max-width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
 
         }
 
@@ -106,69 +97,26 @@
             margin-right: auto;
         }
 
-
-html{
-  scroll-behavior: smooth;
-}
-
-
 .buttonup{
   padding:20px;
 }
 
-.fa-solid{
-color: #a67814;
-height: 20px;
-}
 
+@media only screen and (max-width: 600px) {
 
-.dropbtn2 {
-  color:#a67814;
-  /* padding: 10px; */
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  background-color:white ;
-}
+  .header-text{
+    width: 30%;
+    background-color:transparent;
+    top: 50%;
+    left: 20%;
+  }
 
+  .header-text h1{
+    font-size: 30px;
+    color: #a67814;
+    margin-right: 0px;
+  }
 
-.dropbtn2:hover {
-  color:#5b4208;
-}
-
-/* Style the dropdown content (hidden by default) */
-.dropdown-content2 {
-  padding-top: 5px;
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Style the links inside the dropdown */
-.dropdown-content2 a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #a67814;
-}
-
-/* Change color on hover */
-.dropdown-content2 a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown content when the button is hovered over */
-.dropdown2:hover .dropdown-content {
-  display: block;
-}
-
-        @media only screen and (max-width: 600px) {
-            .header-text {
-                margin-left: 50px;
-            }
 
             .column hr {
                 margin-left: 10px;
@@ -185,17 +133,19 @@ height: 20px;
 
   <body>
   <div class = "header">
-    <div class = "header-text">
-    <h2>AgeFix<br> Face Treatments </h2><br>
-      <h3>Where radiant beauty meets optimal health.</h3>
-      </div>
+    <img src = "images/headerface.png">
+    <div class ="header-text">
+    <h1>Face Treatments</h1>
+    </div>
   </div>
-  <div id = "punchline">
-    <h3>
-      Discover our diverse range of face treatments catered to individual needs,
-      promoting skin vitality and rejuvenation. A beautiful and healthy face is not just an aesthetic asset but a reflection of overall well-being. Embrace the transformative
-      journey to radiance with our expert care.</h3>
   </div>
+
+      <div class ="punchline">
+        <h3> Discover our diverse range of face treatments catered to individual needs,
+          promoting skin vitality and rejuvenation. A beautiful and healthy face is not just an aesthetic asset but a reflection of overall well-being. Embrace the transformative
+          journey to radiance with our expert care.</h3>
+     </div>
+
   <div class = "face-treatments">
     <div class = "treatment">
           <div class = "row">
@@ -231,25 +181,9 @@ height: 20px;
               <hr>
             </div>
           </div>
-        <!-- <div class = "row">
-          <div class = "column">
-            <br><p> Treatment:</p><br>
-            <h2>Dermafillers</h2>
-            <br>
-            <p>Rediscover radiance with our precision dermal filler treatments, sculpting a naturally youthful look that enhances and revitalizes your unique beauty.</p>
-            <br>
-            <h4>Price start from £200</h4>
-            <br>
-            <a href = "botox.html">Explore Treatment</a>
-            <hr>
-          </div>
+          <div class = "row">
           <div class = "column">
             <img src = "images/faced.png">
-          </div>
-        </div> -->
-        <!-- <div class = "row">
-          <div class = "column">
-            <img src = "images/faceman1.png">
           </div>
           <div class = "column">
             <br><p> Treatment:</p><br>
@@ -264,9 +198,9 @@ height: 20px;
             <a href = "botox.html">Explore Treatment</a>
             <hr>
           </div>
-        </div>
-        <div class = "buttonup"> -->
-          <a href="#punchline"><i class="fa-solid fa-angles-up"></i></a>
+          </div>
+        <div class = "buttonup">
+          <a href="#header-text"><i class="fa-solid fa-angles-up"></i></a>
         </div>
       <div class = "row">
         <div class = "column">
@@ -279,7 +213,7 @@ height: 20px;
           <br>
           <a href = "botox.html">Explore Treatment</a>
           <hr>
-        </div>
+      </div>
         <div class = "column">
           <img src = "images/facee.png">
         </div>
@@ -349,7 +283,7 @@ height: 20px;
           <hr>
         </div>
         <div class = "column">
-          <img src = "images/.png">
+          <img src = "images/12.png">
         </div>
       </div>
      </div>
@@ -358,6 +292,6 @@ height: 20px;
     <a href="#punchline"><i class="fa-solid fa-angles-up"></i></a>
   </div>
   </div>
-  <iframe src="footer.html" width="100%" height="720" frameborder="0" scrolling="no"></iframe>
+  <iframe id  = "footershow"src="footer.html" width="100%"frameborder="0" scrolling="no"></iframe>
   </body>
   </html>
