@@ -18,7 +18,15 @@
         <div class = "menu">
         <ul id = "sidemenu">
           <li><a href="#about">About</a></li>
-          <li><a href="#treatments">Treatments</a></li>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Treatments</button>
+            <div id="myDropdown" class="dropdown-content">
+              <li><a href="face.html">Face Lab </a></li>
+              <li><a href="body.html">Body Lab</a><li>
+              <li><a href="hair.html">Hair Lab</a><li>
+            </div>
+          </div>
+
           <li><a href="academy.html">Academy</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="contactform.html">Contact</a></li>
@@ -37,15 +45,15 @@
                 <div class ="header-text">
                 <h1>WELCOME</h1>
 <br>
-                     <p>to AgeFix ....your haven for rejuvenation and timeless beauty. At our aesthetic sanctuary, we blend artistry with expertise to bring you personalized Anti Wrinkle Injections  and Skin Booster treatments. Step into a realm where your natural radiance is our priority. Explore our transformative services designed to enhance your beauty and elevate your confidence. Trust us to unveil your timeless allure.
+                     <p>to AgeFix ....your heaven for rejuvenation and timeless beauty. At our aesthetic sanctuary, we blend artistry with expertise to bring you personalized Anti Wrinkle Injections  and Skin Booster treatments. Step into a realm where your natural radiance is our priority. Explore our transformative services designed to enhance your beauty and elevate your confidence. Trust us to unveil your timeless allure.
                       Welcome to a place where every visit is a journey to the best version of yourself.</p>
                       </div>
+  </div>
 
-                      <div class ="header-punchline">
-                        <h2>to AgeFix ....your haven for rejuvenation and timeless beauty. At our aesthetic sanctuary, we blend artistry with expertise to bring you personalized Anti Wrinkle Injections  and Skin Booster treatments. Step into a realm where your natural radiance is our priority. Explore our transformative services designed to enhance your beauty and elevate your confidence. Trust us to unveil your timeless allure.
-                        Welcome to a place where every visit is a journey to the best version of yourself.</h2>
-                  </div>
-                    </div>
+  <div class ="header-punchline">
+    <h3>to AgeFix ....your haven for rejuvenation and timeless beauty. At our aesthetic sanctuary, we blend artistry with expertise to bring you personalized Anti Wrinkle Injections  and Skin Booster treatments. Step into a realm where your natural radiance is our priority. Explore our transformative services designed to enhance your beauty and elevate your confidence. Trust us to unveil your timeless allure.
+    Welcome to a place where every visit is a journey to the best version of yourself.</h3>
+ </div>
 
   <!-- ...........treatments................ -->
 
@@ -319,7 +327,7 @@
 <script>
   var sidemenu = document.getElementById("sidemenu");
   function openmenu (){
-    sidemenu.style.right ="0";
+    sidemenu.style.right ="0px";
   }
   function closemenu (){
     sidemenu.style.right ="-200px";
@@ -332,7 +340,7 @@
 setTimeout(function() {
       var sideButton = document.getElementById('sideButton');
       sideButton.style.display = 'block';
-    }, 20000);
+    }, 2000);
 
   function openSignupPage() {
     var signupPage = document.getElementById('signup-page');
@@ -343,6 +351,16 @@ setTimeout(function() {
     var signupPage = document.getElementById('signup-page');
     signupPage.style.display = 'none';
   }
+</script>
+<script>
+  var dropdown = document.querySelector(".dropdown");
+  dropdown.addEventListener("mouseenter", function () {
+    document.getElementById("myDropdown").classList.add("show");
+  });
+
+  dropdown.addEventListener("mouseleave", function () {
+    document.getElementById("myDropdown").classList.remove("show");
+  });
 </script>
 
 

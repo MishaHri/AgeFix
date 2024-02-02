@@ -27,16 +27,23 @@ html{
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             clear: both;
             overflow: hidden;
+            align-items: center;
         }
 
-        .header{
+        #header{
       position: relative;
       width: 100%;
-      /* height: 300px; Adjust the height as needed */
+      height: 650px;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       z-index: 1; /* Ensure a proper z-index */
+    }
+
+    #header img {
+width: 100%;
+height: 100%;
+object-fit:cover
     }
 
     .header-text {
@@ -83,6 +90,7 @@ html{
             width: 50%;
             max-width: 100%;
             height: auto;
+            margin: auto;
 
         }
 
@@ -104,6 +112,11 @@ html{
 
 @media only screen and (max-width: 600px) {
 
+
+  .header{
+      height: 400px;
+    }
+s
   .header-text{
     width: 30%;
     background-color:transparent;
@@ -132,8 +145,8 @@ html{
   </head>
 
   <body>
-  <div class = "header">
-    <img src = "images/headerface.png">
+  <div id = "header">
+    <img src = "images/facetreatments2.png">
     <div class ="header-text">
     <h1>Face Treatments</h1>
     </div>
@@ -200,7 +213,7 @@ html{
           </div>
           </div>
         <div class = "buttonup">
-          <a href="#header-text"><i class="fa-solid fa-angles-up"></i></a>
+          <a href="#header"><i class="fa-solid fa-angles-up"></i></a>
         </div>
       <div class = "row">
         <div class = "column">
@@ -289,7 +302,7 @@ html{
      </div>
    </div>
    <div class = "buttonup">
-    <a href="#punchline"><i class="fa-solid fa-angles-up"></i></a>
+    <a href="#header"><i class="fa-solid fa-angles-up"></i></a>
   </div>
   </div>
   <iframe id  = "footershow"src="footer.html" width="100%"frameborder="0" scrolling="no"></iframe>

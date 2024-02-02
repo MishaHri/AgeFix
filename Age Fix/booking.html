@@ -23,6 +23,17 @@
   background: url(images/16.png)no-repeat center center fixed;
 }
 
+#service{
+  padding: 10px;
+  text-align: center;
+  object-fit: content;
+  background-color: rgb(240, 234, 225);
+  font-size: 15px;
+}
+.contact-inputs{
+  margin-top: 5px;
+}
+
 
 
 @media only screen and (max-width:600px){
@@ -38,8 +49,6 @@
   <!-- <div  class ="header">
     <img src = "images/get in touch.png">
 </div> -->
-
-</div>
 <div class ="punchline">
   <h2> AgeFix</h2><br>
 <h3>*By appointment only</h3>
@@ -53,18 +62,23 @@
   <form action="https://api.web3forms.com/submit" method="POST">
     <input type="hidden" name="access_key" value="d99ca4e9-37bd-4e1e-b6b7-cdb36bfd3b0c">
 
-    <input type="text" id="name" name="name" class ="contact-inputs"placeholder="Your Name" required>
+    <input type="text" id="name" name="name" class ="contact-inputs"placeholder="Your Full Name" required>
     <input type="email" id="email" name="email" class ="contact-inputs" placeholder="Your Email"required>
 
     <!-- Date and Time Selection -->
     <div class = "row">
       <div class ="date">
     <label for="date">Select Date:</label>
-    <input type="date" id="date" name="date" class ="contact-inputs"required>
+   <!-- Date Selection -->
+<label for="date">Select Date (Monday to Friday):</label>
+<input type="date" id="date" name="date" class="contact-inputs" required
+       min="2024-01-01" max="2024-12-31" oninput="validateDay()">
+
     </div>
     <div class ="time">
-    <label for="time">Select Time:</label>
-    <input type="time" id="time" name="time" class ="contact-inputs"required>
+      <label for="time">Select Time:</label>
+    <input type="time" id="time" name="time" class="contact-inputs" required
+    min="09:00" max="18:00" step="3600">
     </div>
     </div>
     <!-- Additional Booking Details (you can customize this part based on your needs) -->
@@ -80,6 +94,7 @@
     <!-- Submit Button -->
     <button type="submit" class = "btn">Submit Booking</button>
   </form>
+  </div>
   </div>
   <div class ="punchline">
     <h3>We will do our best to accomodate your request<br>
@@ -125,6 +140,19 @@
   }
 
 </script>
+
+<script>
+  function validateDay() {
+    var selectedDate = new Date(document.getElementById('date').value);
+    var dayOfWeek = selectedDate.getDay();
+
+    if (dayOfWeek < 1 || dayOfWeek > 5) {
+      alert("Please select a date between Monday and Friday.");
+      document.getElementById('date').value = '';
+    }
+  }
+</script>
+
 <iframe  id = "footershow"src="footer.html" width="100%" frameborder="0" scrolling="no"></iframe>
 
 </body>

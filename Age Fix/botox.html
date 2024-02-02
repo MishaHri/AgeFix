@@ -137,7 +137,7 @@ text-decoration: none;
       object-fit: center;
     }
 
-    .table-container  h2{
+    .table-container h2{
      object-fit: center;
       color: #a67814;
       padding: 20px;
@@ -151,6 +151,7 @@ text-decoration: none;
       border-collapse: collapse;
       margin-bottom: 20px;
       border: 1px solid  #ad8528;
+
     }
 
     th, td {
@@ -159,19 +160,24 @@ text-decoration: none;
       font-size: 20px;
     }
 
+    td {
+      border-left: 1px solid #AD8527;
+    }
+
     th {
       background-color: #AD8527;
       color:  white;
+      border-left: 1px solid white;
     }
 
     tr:nth-child(even) {
-      background-color: #E8D29F;
+      background-color: whitesmoke;
       color:  #ad8528;
     }
 
     tr:nth-child(odd) {
-      background-color: #F3E8CF;
-      color: #AD8527;;
+      background-color: white;
+      color: #AD8527;
     }
 
 .tretment-box{
@@ -231,7 +237,7 @@ margin-left: 10px;
 </head>
 <body>
 <div id ="header">
-  <img src ="images/botoxheader.png">
+  <img src ="images/botoxheadersecond.png">
   <div class ="header-text">
     <h1>AgeFix</h1>
   <h1>Botox</h1>
@@ -396,7 +402,7 @@ margin-left: 10px;
     <table>
       <thead>
         <tr>
-          <th>Area</th>
+          <th>Service</th>
           <th>Price</th>
         </tr>
       </thead>
@@ -406,15 +412,15 @@ margin-left: 10px;
           <td>Free*</td>
         </tr>
         <tr>
-          <td>1 Area</td>
+          <td>1 Area Treatment</td>
           <td>160£</td>
         </tr>
         <tr>
-          <td>2 Areas</td>
+          <td>2 Areas Treatment</td>
           <td>180£</td>
         </tr>
         <tr>
-          <td>3 Areas</td>
+          <td>3 Areas Treatment</td>
           <td>200£</td>
         </tr>
       </tbody>
@@ -428,7 +434,7 @@ margin-left: 10px;
     <table>
       <thead>
         <tr>
-          <th>Area</th>
+          <th>Service</th>
           <th>Price</th>
         </tr>
       </thead>
@@ -438,15 +444,15 @@ margin-left: 10px;
           <td>Free*</td>
         </tr>
         <tr>
-          <td>1 Area</td>
+          <td>1 Area Treatment</td>
           <td>180£</td>
         </tr>
         <tr>
-          <td>2 Areas</td>
+          <td>2 Areas Treatment</td>
           <td>160£</td>
         </tr>
         <tr>
-          <td>3 Areas</td>
+          <td>3 Areas Treatment</td>
           <td>200£</td>
         </tr>
       </tbody>
@@ -464,11 +470,16 @@ margin-left: 10px;
 <p>*See Terms & conditions for more details</p>
 </div>
 
+
 <div class = "booknow">
   <h3>Book now a complimentary consultation<h3>
   <div class = "btn"><a href = "booking.html">Book now</a>
 </div>
 
+
+<div class ="photo-areas">
+  <img src ="images/Botoxareas.png">
+</div>
 
 <script>
   document.addEventListener('click', function (event) {
