@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Form</title>
+  <link rel="stylesheet" href ="style.css">
+  <style>
+
+.punchline{
+  margin-top: 14%;
+}
+
+#contactbotox{
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  padding:80px;
+  background: url(images/16.png)no-repeat center center fixed;
+}
+
+#service{
+  padding: 10px;
+  text-align: center;
+  object-fit: content;
+  background-color: rgb(240, 234, 225);
+  font-size: 15px;
+}
+.contact-inputs{
+  margin-top: 5px;
+}
+
+
+
+@media only screen and (max-width:600px){
+  #contactbotox{
+  padding:20px
+}
+
+.punchline{
+  margin-top: 25%;
+}
+
+
+}
+    </style>
+</head>
+
+<body>
+  <nav>
+    <div class = "logo">
+    <a href="index.html"><img src="images/logotransparency.png" class ='logo'></a>
+    </div>
+   </div>
+  </nav>
+<div class ="punchline">
+  <h2> AgeFix</h2><br>
+<h3>*By appointment only</h3>
+</div>
+
+<div id ="contactbotox">
+  <br>
+  <div class = "contact-left">
+<h1>Make a booking</h1>
+<br><br>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="d99ca4e9-37bd-4e1e-b6b7-cdb36bfd3b0c">
+
+    <input type="text" id="name" name="name" class ="contact-inputs"placeholder="Your Full Name" required>
+    <input type="email" id="email" name="email" class ="contact-inputs" placeholder="Your Email"required>
+
+    <!-- Date and Time Selection -->
+    <div class = "row">
+      <div class ="date">
+    <label for="date">Select Date:</label>
+   <!-- Date Selection -->
+<label for="date">Select Date (Monday to Friday):</label>
+<input type="date" id="date" name="date" class="contact-inputs" required
+       min="2024-01-01" max="2024-12-31" oninput="validateDay()">
+
+    </div>
+    <div class ="time">
+      <label for="time">Select Time:</label>
+    <input type="time" id="time" name="time" class="contact-inputs" required
+    min="09:00" max="18:00" step="3600">
+    </div>
+    </div>
+    <!-- Additional Booking Details (you can customize this part based on your needs) -->
+    <label for="service"class ="contact-inputs">Select Service:</label>
+    <select id="service" name="service" required>
+      <option value="service1">Anti-Wrinkle</option>
+      <option value="service2">Profhilio</option>
+      <option value="service2">Seventy hyal</option>
+      <!-- Add more options as needed -->
+    </select>
+    <textarea id="comments" name="comments" rows="4" class ="contact-inputs" placeholder="Additional Comments"></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit" class = "btn">Submit Booking</button>
+  </form>
+  </div>
+  </div>
+  <div class ="punchline">
+    <h3>We will do our best to accomodate your request<br>
+    A member from our team will get in touch to confirm the details of the booking</h3>
+  </div>
+<script>
+  function validateDay() {
+    var selectedDate = new Date(document.getElementById('date').value);
+    var dayOfWeek = selectedDate.getDay();
+
+    if (dayOfWeek < 1 || dayOfWeek > 5) {
+      alert("Please select a date between Monday and Friday.");
+      document.getElementById('date').value = '';
+    }
+  }
+</script>
+<script>
+  window.onscroll =function(){myFunction()};
+  var navbar = document.getElementsByClassName("nav");
+  var sticky =navbar.offsetTop;
+  function myFunction(){
+    if (window.pageYOffset >= sticky){
+      navbar.classList.add("sticky")
+    }else{
+      navbar.classList.remove("sticky")
+    }
+  }
+
+  window.addEventListener("scroll", function() {
+var dropdownContent = document.getElementById("sidemenu");
+if (dropdownContent.classList.contains('show')) {
+  dropdownContent.classList.remove("show");
+}
+});
+
+  var tablinks=document.getElementsByClassName("tab-links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+  function opentab(tabname) {
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+var sidemenu = document.getElementById("sidemenu");
+function openmenu (){
+  sidemenu.style.right ="0px";
+}
+function closemenu (){
+  sidemenu.style.right ="-200px";
+}
+var dropdown = document.querySelector(".dropdown");
+dropdown.addEventListener("mouseenter", function () {
+  document.getElementById("myDropdown").classList.add("show");
+});
+
+dropdown.addEventListener("mouseleave", function () {
+  document.getElementById("myDropdown").classList.remove("show");
+});
+
+</script>
+
+<iframe  id = "footershow"src="footer.html" width="100%" frameborder="0" scrolling="no"></iframe>
+
+</body>
+
+</html>
