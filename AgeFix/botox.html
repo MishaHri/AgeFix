@@ -9,7 +9,31 @@
   <style>
 
 
+#header{
+      position: relative;
+      width: 100%;
+      height: 650px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1; /* Ensure a proper z-index */
+    }
 
+    #header img {
+width: 100%;
+height: 100%;
+object-fit:cover
+    }
+
+    .header-text {
+      position: absolute;
+      text-align: center;
+      top: 70%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      background:rgba(252, 251, 251, 0.5);
+      z-index: 2; /* Set a higher z-index to appear over the header */
+    }
 
 #tretment-sumary{
   padding: 20px;
@@ -38,12 +62,6 @@ padding:30px;
   color: #ad8528;
 }
 
-
-.botox-punch-line{
-  text-align: center;
-  padding: 30px;
-  color: black;
-}
 
 .booknow{
 color: #ad8528;
@@ -79,8 +97,8 @@ text-decoration: none;
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #f9f9f9;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      box-shadow: 0 8px 16px rgba(182, 126, 126, 0.2);
       z-index: 1;
       padding: 20px;
       width: 100%;
@@ -90,14 +108,13 @@ text-decoration: none;
     .dropdown:hover .dropdown-content {
       display: block;
       padding: 20px;
-      border-radius: 10px;
       margin-top: 0px;
     }
 
     .dropdown-item {
       cursor: pointer;
       margin-top: 0px;
-      padding: 5px;
+      padding: 6px;
       background-color: white;
     }
 
@@ -215,16 +232,16 @@ margin-left: 10px;
 </head>
 <body>
 <div id ="header">
-  <img src ="images/facetreatments2123.png">
+  <img src ="images/antiwrinckle.png">
   <div class ="header-text">
-    <h1>AgeFix</h1>
   <h1>Anti-Wrinkle</h1>
+  <h1>Treatment</h1>
 </div>
 </div>
 
 <div class = "punchline">
   <h3>Your premier
-    destination for Botox treatments in London.<br>Non-surgical procedure enhancing facial aesthetics
+    destination for AgeFix treatments in London.<br>Non-surgical procedure enhancing facial aesthetics
     by relaxing muscles, reducing wrinkles, and promoting a smoother,
     youthful appearance.
   </h3>
@@ -286,8 +303,7 @@ margin-left: 10px;
  <div class="dropdown-container">
   <div class="dropdown" id="dropdown1">
     <div class="dropdown-item"><h3>Pre-Treatment for Anti-Wrinkle Injections:<i class="fa-solid fa-angles-down"></i></h3></div>    <div class="dropdown-content">
-      <h3>How to prepare for your treatment to get the best results</h3>
-      <br>
+     <br>
       <div><ul>
         <li>Avoid using topical products that contain tretinoin, retinol, retinoids, glycolic acid, or any "anti-aging" products.</li>
         <li>Refrain from consuming alcohol or coffee 24 hours prior to the treatment.</li>
@@ -485,54 +501,7 @@ margin-left: 10px;
   });
 </script>
 
-<script>
-  window.onscroll =function(){myFunction()};
-  var navbar = document.getElementsByClassName("nav");
-  var sticky =navbar.offsetTop;
-  function myFunction(){
-    if (window.pageYOffset >= sticky){
-      navbar.classList.add("sticky")
-    }else{
-      navbar.classList.remove("sticky")
-    }
-  }
 
-  window.addEventListener("scroll", function() {
-var dropdownContent = document.getElementById("sidemenu");
-if (dropdownContent.classList.contains('show')) {
-  dropdownContent.classList.remove("show");
-}
-});
-
-  var tablinks=document.getElementsByClassName("tab-links");
-  var tabcontents=document.getElementsByClassName("tab-contents");
-  function opentab(tabname) {
-    for(tablink of tablinks){
-      tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents){
-      tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-    }
-var sidemenu = document.getElementById("sidemenu");
-function openmenu (){
-  sidemenu.style.right ="0px";
-}
-function closemenu (){
-  sidemenu.style.right ="-200px";
-}
-var dropdown = document.querySelector(".dropdown");
-dropdown.addEventListener("mouseenter", function () {
-  document.getElementById("myDropdown").classList.add("show");
-});
-
-dropdown.addEventListener("mouseleave", function () {
-  document.getElementById("myDropdown").classList.remove("show");
-});
-
-</script>
 
         <iframe  id = "footershow"src="footer.html" width="100%" frameborder="0" scrolling="no"></iframe>
 </body>

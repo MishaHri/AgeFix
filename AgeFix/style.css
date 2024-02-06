@@ -135,9 +135,9 @@ nav ul li a:hover::after{
   left: 0;
   background-color:white;
   color:#a67814;
-  padding: 5px;
+  /* padding: 5px; */
   cursor: pointer;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
 }
 
 .side-button:hover {
@@ -194,17 +194,20 @@ padding: 10px;
   border-radius: 12px;
   width:fit-content;
   margin-left: 20px;
+  text-align: center;
 }
 
 
 .header-text h1{
 font-size:80px;
 color: #a67814;
+text-align: center;
 }
 
 .header-text h3{
   font-size:20px;
   color: white;
+  text-align: center;
   }
 
 .header-punchline{
@@ -216,6 +219,7 @@ color: #a67814;
   background-color:rgb(225, 207, 178);
   text-align: center;
   padding: 30px;
+  border-radius:  0px 50px;
 }
 
 .punchline-academy{
@@ -717,6 +721,7 @@ height: 64vh;
   top: 30%; /* Add this to keep it at the top */
   height: fit-content;
   width:fit-content;
+  text-align: center;
 }
 
   .header-text h3{
@@ -734,6 +739,7 @@ display:none
   .header-text h1{
     font-size: 40px;
     color: #a67814;
+    text-align: center;
   }
 
 
