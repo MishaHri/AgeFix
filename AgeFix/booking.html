@@ -17,7 +17,7 @@
   justify-content: center;
   text-align: center;
   padding:80px;
-  background: url(images/16.png)no-repeat center center fixed;
+  /* background: url(images/16.png)no-repeat center center fixed; */
 }
 
 #service{
@@ -25,8 +25,9 @@
   text-align: center;
   object-fit: content;
   background-color: rgb(240, 234, 225);
-  font-size: 15px;
 }
+
+
 .contact-inputs{
   margin-top: 5px;
 }
@@ -42,6 +43,12 @@
   margin-top: 25%;
 }
 
+#service{
+  padding: 0px;
+  border-radius: 6px;
+  background-color: rgb(240, 234, 225);
+}
+
 
 }
     </style>
@@ -54,6 +61,7 @@
     </div>
    </div>
   </nav>
+
 <div class ="punchline">
   <h2> AgeFix</h2><br>
 <h3>*By appointment only</h3>
@@ -75,7 +83,7 @@
       <div class ="date">
     <label for="date">Select Date:</label>
    <!-- Date Selection -->
-<label for="date">Select Date (Monday to Friday):</label>
+<label for="date">Select Date:</label>
 <input type="date" id="date" name="date" class="contact-inputs" required
        min="2024-01-01" max="2024-12-31" oninput="validateDay()">
 
@@ -85,13 +93,12 @@
     <input type="time" id="time" name="time" class="contact-inputs" required
     min="09:00" max="18:00" step="3600">
     </div>
-    </div>
     <!-- Additional Booking Details (you can customize this part based on your needs) -->
     <label for="service"class ="contact-inputs">Select Service:</label>
     <select id="service" name="service" required>
-      <option value="service1">Anti-Wrinkle</option>
-      <option value="service2">Profhilio</option>
-      <option value="service2">Seventy hyal</option>
+      <option value="service1">Face: Anti-Wrinkle</option>
+      <option value="service2">Face: Profhilio</option>
+      <option value="service2">Face: Seventy hyal</option>
       <!-- Add more options as needed -->
     </select>
     <textarea id="comments" name="comments" rows="4" class ="contact-inputs" placeholder="Additional Comments"></textarea>
@@ -101,9 +108,10 @@
   </form>
   </div>
   </div>
+</div>
   <div class ="punchline">
-    <h3>We will do our best to accomodate your request<br>
-    A member from our team will get in touch to confirm the details of the booking</h3>
+    <h2>We will do our best to accomodate your request<br>
+    A member from our team will get in touch to confirm the details of the booking</h2>
   </div>
 <script>
   function validateDay() {
