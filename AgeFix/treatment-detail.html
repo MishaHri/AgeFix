@@ -146,7 +146,49 @@ padding: 10px;
 padding: 20px;
 }
 
+#tretment-sumary{
+  padding: 20px;
+  background-color: white;
+  color:#ad8528;
+  text-align: center;
+  border-radius: 12px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border:solid 1px #F5F5F5;
+}
 
+
+
+.column-tretment{
+border-radius: 10px;
+border:3px solid #ad8528;
+padding:30px;
+}
+
+
+.benefits ul{
+  display: inline-block;
+  color: #ad8528;
+}
+
+
+.booknow{
+color: #ad8528;
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.booknow a{
+color: #ad8528;
+text-decoration: none;
+}
+
+.booknow a:hover{
+  transform: scale(1.1);
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -216,15 +258,14 @@ s
   <div id = "header">
     <img src = "images/facetreatments21.png">
     <div class ="header-text">
-    <h1>FaceFix</h1>
+    <h1>Anti Wrinkle Treatment</h1>
     </div>
   </div>
   </div>
 
       <div class ="punchline">
-        <h2> Discover our diverse range of face treatments catered to individual needs,
-          promoting skin vitality and rejuvenation. A beautiful and healthy face is not just an aesthetic asset but a reflection of overall well-being. Embrace the transformative
-          journey to radiance with our expert care.</h2>
+        <h2> Your premier destination for AgeFix treatments in London.
+          Non-surgical procedure enhancing facial aesthetics by relaxing muscles, reducing wrinkles, and promoting a smoother, youthful appearance.</h2>
      </div>
      <div class="side-button" onclick="openSignupPage()"><i class="fa-solid fa-angles-left"></i></div>
   <!-- Signup page -->
@@ -244,7 +285,48 @@ s
   </div>
 <br><br>
   <div class = "face-treatments">
-    <div class = "treatment">
+    <div id ="tretment-sumary">
+      <h2>Treatment Sumary</h2>
+      <br>
+      <br>
+      <div class ="treatment">
+    <div class = "row">
+      <div class = "column-tretment">
+        <p>Application</p>
+        <br>
+        <i class="fas fa-syringe"></i>
+      </div>
+      <div class = "column-tretment">
+        <p>Procedure <br>time</p>
+        <i class="fa-solid fa-clock"></i>
+        <p>20 min</p>
+      </div>
+      <div class = "column-tretment">
+        <p>Recovery <br>Time</p>
+        <i class="fa-regular fa-clock"></i>
+        <br>
+        <p>5-7 days</p>
+      </div>
+      <div class = "column-tretment">
+        <p>Discomfort <br> Level</p>
+        <i class="fa-solid fa-face-smile"></i>
+      </div>
+      </div>
+      <div class = "benefits">
+        <br>
+      <h3>Benefits</h3>
+      <ul style="list-style-type:square">
+        <li>Skin Smoothing</li>
+        <li>Anti-ageing</li>
+        <li>Radiance</li>
+      </ul>
+      <br>
+      <div class = "booknow">
+      <a href = "booking.html">Book now a complimentary consultation</a>
+      </div>
+    </div>
+    </div>
+    </div>
           <div class = "row">
             <div class = "column" style="background-color:white">
                     <h1>Anti-Wrinkle</h1>
